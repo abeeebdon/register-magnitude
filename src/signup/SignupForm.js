@@ -20,7 +20,7 @@ const SignupForm = ({
   return (
     <form
       onSubmit={(e) => handleSubmit(e)}
-      className="w-auto"
+      className="w-full"
       onClick={() => handleError()}
     >
       {/* for names */}
@@ -64,7 +64,6 @@ const SignupForm = ({
         />
         {emailError && <p className="error">Please enter a valid email</p>}
       </div>
-      {/* for staff id */}
       <div className="m-2">
         <input
           type="text"
@@ -77,7 +76,7 @@ const SignupForm = ({
           className="input"
         />
       </div>
-      <div className="m-2 text-left text-white p-2">
+      <div className="m-2 text-left text-white p-2 flex justify-between">
         <label className="block">Gender:</label>
         <div className="px-2">
           <input

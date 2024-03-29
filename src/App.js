@@ -1,11 +1,12 @@
-import Signup from './signup/Signup'
-import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Success from './Success'
+import Home from './Home/Index'
 function App() {
-  const [success, setSuccess] = useState(false)
   return (
-    <main className="w-full max-w-[400px]  mx-auto my-auto mt-8 px-2 py-4">
-      <Signup success={success} setSuccess={setSuccess} />
-    </main>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/success" element={<Success />} />
+    </Routes>
   )
 }
 export default App
