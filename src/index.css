@@ -9,6 +9,6 @@
     @apply text-red-500 text-left px-3;
   }
   .image {
-    @apply w-[100px] h-[100px];
+    @apply w-[100%] h-[100%];
   }
 }

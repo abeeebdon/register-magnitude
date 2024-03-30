@@ -2,7 +2,7 @@ import { IoLocationSharp } from 'react-icons/io5'
 import { FaPhoneAlt } from 'react-icons/fa'
 const Footer = () => {
   return (
-    <footer className="flex justify-around items-start my-4 p-4 gap-[5%]">
+    <footer className="flex flex-wrap justify-around items-start my-4 p-4 gap-[5%]">
       <div className="basis-1/3">
         <h2>Details</h2>
         <p>
