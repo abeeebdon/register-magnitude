@@ -73,7 +73,7 @@ const Signup = () => {
     fetchData()
   }
   return (
-    <div className="w-full min-[400px]:w-[80%] rounded-xl mx-auto my-auto mt-8 px-2 py-4 text-center bg-blue-950">
+    <div className="w-full rounded-xl mx-auto my-auto mt-8 px-2 py-4 text-center bg-blue-950">
       <div className="p-4">
         <h1 className="text-white font-bold text-[2rem]">Registration Form </h1>
       </div>
