@@ -73,31 +73,38 @@ const Signup = () => {
     fetchData()
   }
   return (
-    <div className="w-full rounded-xl mx-auto my-auto mt-8 px-2 py-4 text-center bg-blue-950">
-      <div className="p-4">
-        <h1 className="text-white font-bold text-[2rem]">Registration Form </h1>
+    <section className="flex m-4">
+      <div className="w-full max-w-[800px]  mx-auto my-auto mt-4 px-2 py-2 text-center bg-blue-950">
+        <div className="p-4">
+          <h1 className="text-white font-bold text-[2rem]">
+            Registration Form
+          </h1>
+        </div>
+        <SignupForm
+          gender={gender}
+          setGender={setGender}
+          location={location}
+          setLocation={setLocation}
+          userDetails={userDetails}
+          setUserDetails={setUserDetails}
+          handleSubmit={handleSubmit}
+          isLoading={isLoading}
+          isError={isError}
+          setIsError={setIsError}
+          errMsg={errMsg}
+          firstnameError={firstnameError}
+          lastnameError={lastnameError}
+          emailError={emailError}
+          checkNumber={checkNumber}
+          locationError={locationError}
+          genderError={genderError}
+          handleError={handleError}
+        />
       </div>
-      <SignupForm
-        gender={gender}
-        setGender={setGender}
-        location={location}
-        setLocation={setLocation}
-        userDetails={userDetails}
-        setUserDetails={setUserDetails}
-        handleSubmit={handleSubmit}
-        isLoading={isLoading}
-        isError={isError}
-        setIsError={setIsError}
-        errMsg={errMsg}
-        firstnameError={firstnameError}
-        lastnameError={lastnameError}
-        emailError={emailError}
-        checkNumber={checkNumber}
-        locationError={locationError}
-        genderError={genderError}
-        handleError={handleError}
-      />
-    </div>
+      <div className="max-[960px]:hidden">
+        <p>Visible</p>
+      </div>
+    </section>
   )
 }
 export default Signup

@@ -24,59 +24,64 @@ const SignupForm = ({
       onClick={() => handleError()}
     >
       {/* for names */}
-      <div className="m-2">
-        <input
-          type="text"
-          id="Firstname"
-          placeholder="First Name"
-          value={userDetails.firstname}
-          onChange={(e) =>
-            setUserDetails({ ...userDetails, firstname: e.target.value })
-          }
-          className="input"
-        />
-        {firstnameError && <p className="error">This is a required field</p>}
-      </div>
-      <div className="m-2">
-        <input
-          type="text"
-          id="Lastname"
-          placeholder="Last Name"
-          value={userDetails.lastname}
-          onChange={(e) =>
-            setUserDetails({ ...userDetails, lastname: e.target.value })
-          }
-          className="input"
-        />
-        {lastnameError && <p className="error">This is a required field</p>}
+      <div className="pr-4 w-full min-[500px]:flex justify-between">
+        <div className="m-2 w-full">
+          <input
+            type="text"
+            id="Firstname"
+            placeholder="First Name"
+            value={userDetails.firstname}
+            onChange={(e) =>
+              setUserDetails({ ...userDetails, firstname: e.target.value })
+            }
+            className="input "
+          />
+          {firstnameError && <p className="error">This is a required field</p>}
+        </div>
+        <div className="m-2 w-full">
+          <input
+            type="text"
+            id="Lastname"
+            placeholder="Last Name"
+            value={userDetails.lastname}
+            onChange={(e) =>
+              setUserDetails({ ...userDetails, lastname: e.target.value })
+            }
+            className="input"
+          />
+          {lastnameError && <p className="error">This is a required field</p>}
+        </div>
       </div>
       {/* for email */}
-      <div className="m-2">
-        <input
-          type="text"
-          id="email"
-          placeholder="Email Address"
-          value={userDetails.email}
-          onChange={(e) =>
-            setUserDetails({ ...userDetails, email: e.target.value })
-          }
-          className="input"
-        />
-        {emailError && <p className="error">Please enter a valid email</p>}
+      <div className="pr-4 w-full min-[500px]:flex justify-between">
+        <div className="m-2 w-full">
+          <input
+            type="text"
+            id="email"
+            placeholder="Email Address"
+            value={userDetails.email}
+            onChange={(e) =>
+              setUserDetails({ ...userDetails, email: e.target.value })
+            }
+            className="input"
+          />
+          {emailError && <p className="error">Please enter a valid email</p>}
+        </div>
+        <div className="m-2 w-full">
+          <input
+            type="text"
+            id="number"
+            placeholder="Phone Number"
+            value={userDetails.phoneNumber}
+            onChange={(e) => {
+              checkNumber(e.target.value)
+            }}
+            className="input"
+          />
+        </div>
       </div>
-      <div className="m-2">
-        <input
-          type="text"
-          id="number"
-          placeholder="Phone Number"
-          value={userDetails.phoneNumber}
-          onChange={(e) => {
-            checkNumber(e.target.value)
-          }}
-          className="input"
-        />
-      </div>
-      <div className="m-2 text-left text-white p-2 flex justify-between">
+
+      <div className="min-[500px]:w-[50%] m-2 text-left text-white p-2 flex justify-between">
         <label className="block">Gender:</label>
         <div className="px-2">
           <input

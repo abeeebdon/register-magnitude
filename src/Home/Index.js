@@ -6,6 +6,7 @@ import Footer from '../sections/Footer'
 import Section3 from '../sections/Section3'
 import SideBar from '../components/SideBar'
 import useWindowSize from '../hooks/useWindowSize'
+import Section2 from '../sections/Section2'
 const Index = () => {
   const { width } = useWindowSize()
   const [sideBar, setSideBar] = useState(false)
@@ -21,8 +22,9 @@ const Index = () => {
       <Header handleSideBar={handleSideBar} sideBar={sideBar} />
       {sideBar && width < 650 && <SideBar />}
       <Section1 />
-      <Signup />
+      <Section2 />
       <Section3 />
+      <Signup />
       <Footer />
     </main>
   )
