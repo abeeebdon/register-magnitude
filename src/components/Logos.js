@@ -34,28 +34,28 @@ const Logos = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   }
 
   return (
-    <section className="w-[80%] mx-auto m-4 p-4">
+    <section className="w-[80%] max-w-[900px] mx-auto m-4 p-4">
       <Slider {...settings}>
-        <div className="w-full max-w-[300px]">
+        <div className="w-full max-w-[250px]">
           <img src={image1} alt="img1" className="image" />
         </div>
-        <div className="w-full max-w-[300px]">
+        <div className="w-full max-w-[250px]">
           <img src={image2} alt="img1" className="image" />
         </div>
-        <div className="w-full max-w-[300px]">
+        <div className="w-full max-w-[250px]">
           <img src={image2} alt="img1" className="image" />
         </div>
-        <div className="w-full max-w-[300px]">
+        <div className="w-full max-w-[250px]">
           <img src={image1} alt="img1" className="image" />
         </div>
-        <div className="w-full max-w-[300px]">
+        <div className="w-full max-w-[250px]">
           <img src={image2} alt="img1" className="image" />
         </div>
       </Slider>

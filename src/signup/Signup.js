@@ -110,9 +110,6 @@ const Signup = () => {
           skillError={skillError}
         />
       </div>
-      <div className="max-[960px]:hidden">
-        <p>Visible</p>
-      </div>
     </section>
   )
 }

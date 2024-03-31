@@ -21,8 +21,6 @@ const Index = () => {
   })
   return (
     <main className=" w-full">
-      <Header handleSideBar={handleSideBar} sideBar={sideBar} />
-      {sideBar && width < 650 && <SideBar />}
       <Section />
       <Section1 />
       <Section2 />

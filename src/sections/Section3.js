@@ -9,7 +9,7 @@ const Section3 = () => {
           <h1 className="font-bold text-[2.5rem] text-blue-950">
             Our Distinguished Speakers
           </h1>
-          <p className="w-[80%]">
+          <p className="w-[80%] text-[1.3rem]">
             The summit will feature a series of keynote addresses, fireside
             chats, and panel discussions with renowned leaders, industry
             experts, and thought leaders.
