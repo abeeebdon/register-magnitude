@@ -7,6 +7,8 @@ import Section3 from '../sections/Section3'
 import SideBar from '../components/SideBar'
 import useWindowSize from '../hooks/useWindowSize'
 import Section2 from '../sections/Section2'
+import Section4 from '../sections/Section4'
+import Logos from '../components/Logos'
 const Index = () => {
   const { width } = useWindowSize()
   const [sideBar, setSideBar] = useState(false)
@@ -17,12 +19,14 @@ const Index = () => {
     setSideBar(false)
   })
   return (
-    <main className="bg-red-50 w-full">
+    <main className=" w-full">
       <Header handleSideBar={handleSideBar} sideBar={sideBar} />
       {sideBar && width < 650 && <SideBar />}
       <Section1 />
       <Section2 />
       <Section3 />
+      <Section4 />
+      <Logos />
       <Signup />
       <Footer />
     </main>

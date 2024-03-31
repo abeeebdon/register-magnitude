@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section1 = () => {
   return (
-    <div className="bg-red-100 my-4 p-4 flex justify-center items-center mx-auto w-full">
+    <div className=" my-4 p-4 flex justify-center items-center mx-auto w-full">
       <div className="w-fit border-[1rem] border-white rounded-full bg-blue-950 p-6 left-[15%]">
         <p className=" text-white mx-auto px-4 py-8 text-[1.2rem]">
           The Youth <br />
