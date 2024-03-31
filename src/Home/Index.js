@@ -16,7 +16,6 @@ const Index = () => {
   window.addEventListener('scroll', () => {
     setSideBar(false)
   })
-  console.log(sideBar)
   return (
     <main className="bg-red-50 w-full">
       <Header handleSideBar={handleSideBar} sideBar={sideBar} />
