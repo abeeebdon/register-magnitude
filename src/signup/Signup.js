@@ -8,6 +8,7 @@ const Signup = () => {
 
   // getting the input fields into an object as a state
   const [gender, setGender] = useState()
+  const [skills, setSkills] = useState()
   const [location, setLocation] = useState()
   const [userDetails, setUserDetails] = useState({
     firstname: '',
@@ -20,6 +21,7 @@ const Signup = () => {
   const [emailError, setEmailError] = useState(false)
   const [locationError, setLocationError] = useState(false)
   const [genderError, setGenderError] = useState(false)
+  const [skillError, setSkillError] = useState(false)
 
   const [errMsg, setErrMsg] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -33,6 +35,7 @@ const Signup = () => {
     setFirstnameError(false)
     setGenderError(false)
     setLocationError(false)
+    setSkillError(false)
   }
 
   const checkNumber = (value) => {
@@ -65,6 +68,9 @@ const Signup = () => {
     if (!location) {
       setLocationError(true)
     }
+    if (!skills) {
+      setSkillError(true)
+    }
     if (!gender) {
       setGenderError(true)
       return
@@ -73,7 +79,7 @@ const Signup = () => {
     fetchData()
   }
   return (
-    <section className="flex m-4">
+    <section className="flex m-4 p-4">
       <div className="w-full max-w-[800px]  mx-auto my-auto mt-4 px-2 py-2 text-center bg-blue-950">
         <div className="p-4">
           <h1 className="text-white font-bold text-[2rem]">
@@ -99,6 +105,9 @@ const Signup = () => {
           locationError={locationError}
           genderError={genderError}
           handleError={handleError}
+          skills={skills}
+          setSkills={setSkills}
+          skillError={skillError}
         />
       </div>
       <div className="max-[960px]:hidden">

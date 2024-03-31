@@ -16,11 +16,14 @@ const SignupForm = ({
   genderError,
   checkNumber,
   handleError,
+  skills,
+  setSkills,
+  skillError,
 }) => {
   return (
     <form
       onSubmit={(e) => handleSubmit(e)}
-      className="w-full"
+      className="w-full p-4"
       onClick={() => handleError()}
     >
       {/* for names */}
@@ -52,7 +55,7 @@ const SignupForm = ({
           {lastnameError && <p className="error">This is a required field</p>}
         </div>
       </div>
-      {/* for email */}
+      {/* for email and phone number */}
       <div className="pr-4 w-full min-[500px]:flex justify-between">
         <div className="m-2 w-full">
           <input
@@ -80,33 +83,68 @@ const SignupForm = ({
           />
         </div>
       </div>
-
-      <div className="min-[500px]:w-[50%] m-2 text-left text-white p-2 flex justify-between">
-        <label className="block">Gender:</label>
-        <div className="px-2">
-          <input
-            type="radio"
-            name="gender"
-            value="male"
-            checked={gender === 'male'}
-            onChange={() => setGender('male')}
-          />
-          Male
+      {/* for Gender and technical skills */}
+      <div className="pr-4 w-full min-[500px]:flex justify-between">
+        <div className="m-2 text-left text-white p-2 flex">
+          <label className="block">Gender:</label>
+          <div className="px-2">
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              checked={gender === 'male'}
+              onChange={() => setGender('male')}
+            />
+            Male
+          </div>
+          <div className="px-2">
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              checked={gender === 'female'}
+              onChange={() => setGender('female')}
+            />
+            Female
+          </div>
+          {genderError && (
+            <p className="block text-red-500 text-left">
+              Please select your gender
+            </p>
+          )}
         </div>
-        <div className="px-2">
-          <input
-            type="radio"
-            name="gender"
-            value="female"
-            checked={gender === 'female'}
-            onChange={() => setGender('female')}
-          />
-          Female
+        <div className=" m-2 text-left text-white p-2 flex">
+          <label className="block">Do you have any technical skills?</label>
+          <div className="px-2">
+            <input
+              type="radio"
+              name="gender"
+              value="Yes"
+              checked={skills === 'yes'}
+              onChange={() => setSkills('yes')}
+            />
+            Yes
+          </div>
+          <div className="px-2">
+            <input
+              type="radio"
+              name="gender"
+              value="No"
+              checked={skills === 'No'}
+              onChange={() => setSkills('No')}
+            />
+            No
+          </div>
+          {skillError && (
+            <div>
+              <p className=" text-red-500 text-left">
+                This is a required field
+              </p>
+            </div>
+          )}
         </div>
-        {genderError && (
-          <p className=" text-red-500 text-left">Please select your gender</p>
-        )}
       </div>
+
       <div className="m-2">
         <input
           type="text"

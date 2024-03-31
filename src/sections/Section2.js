@@ -41,7 +41,7 @@ const Section2 = () => {
   return (
     <section className="bg-blue-900 text-white p-8 m-4 min-[600px]:flex justify-around items-center">
       <div>
-        <h2 className="font-bold text-xl">Event Countdown</h2>
+        <h2 className="font-bold text-[2.2rem]">Event Countdown</h2>
       </div>
       <div className="flex gap-[1rem] justify-between">
         <div className="flex-col gap-0">
