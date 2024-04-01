@@ -40,27 +40,23 @@ const Section2 = () => {
 
   return (
     <section className="font-rubik bg-blue-950 text-white p-8 m-4">
-      <div className="min-[600px]:flex max-[500px]:flex-col justify-between items-center max-w-[1000px] mx-auto">
-        <div>
-          <h2 className="text-[4rem]">Event Countdown</h2>
-        </div>
-        <div className="flex justify-between items-center gap-8">
-          <div className=" ">
-            <h1 className="text-[8rem] leading-11">{countdown.days}</h1>
-            <div className="m-4">
-              <p className=" text-[1rem] font-semibold text-center">Days</p>
-            </div>
+      <div className="min-[650px]:flex max-[500px]:flex-col justify-evenly items-center max-w-[1000px] mx-auto">
+        <h2 className="font-bold text-[3.2rem] text-center">Event Countdown</h2>
+        <div className="flex justify-between items-center gap-[1rem] min-[800]:gap-[6%]">
+          <div className=" flex-col gap-0">
+            <h1 className="countdown-heading">{countdown.days}</h1>
+            <p className=" text-[1rem] font-semibold text-center">Days</p>
           </div>
           <div className="flex-col gap-0">
-            <h1 className="font-[900] text-[3.5rem]">{countdown.hours}</h1>
+            <h1 className="countdown-heading">{countdown.hours}</h1>
             <p className=" text-[1rem] font-semibold text-center">Hours</p>
           </div>
           <div className="flex-col gap-0">
-            <h1 className="font-[900] text-[3.5rem]">{countdown.minutes}</h1>
+            <h1 className="countdown-heading">{countdown.minutes}</h1>
             <p className=" text-[1rem] font-semibold text-center">Minutes</p>
           </div>
           <div className="flex-col gap-0">
-            <h1 className="font-[900] text-[3.5rem]">{countdown.seconds}</h1>
+            <h1 className="countdown-heading">{countdown.seconds}</h1>
             <p className=" text-[1rem] font-semibold text-center">Seconds</p>
           </div>
         </div>

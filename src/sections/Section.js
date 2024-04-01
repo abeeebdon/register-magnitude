@@ -1,5 +1,4 @@
-import React from 'react'
-import image1 from '../images/NYSC2.jpg'
+import image1 from '../images/NYSC.jpg'
 const Section = () => {
   return (
     <div className="mx-auto h-[80vh]">
