@@ -1,8 +1,8 @@
-import image1 from '../images/NYSC.jpg'
+import image2 from '../images/NYSC.jpg'
 const Section = () => {
   return (
     <div className="mx-auto h-[60vh]">
-      <img src={image1} alt="NYSC" className="image" />
+      <img src={image2} alt="NYSC" className="image" />
     </div>
   )
 }
