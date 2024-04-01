@@ -3,7 +3,7 @@ import React from 'react'
 const Section1 = () => {
   return (
     <div className=" my-8 p-4 mx-auto w-full max-w-[750px] relative min-[650px]:flex flex-row">
-      <div className="w-fit border-[1.2rem] border-white rounded-full bg-blue-950 p-6 mx-auto absolute top-[-18%] right-0 left-0">
+      <div className="w-fit border-[1rem] border-white rounded-full bg-blue-950 p-6 mx-auto absolute top-[-18%] right-0 left-0">
         <p className=" text-white mx-auto font-bold px-4 py-10 text-[2rem]">
           The Youth <br />
           Social Summit
