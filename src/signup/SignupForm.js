@@ -27,7 +27,7 @@ const SignupForm = ({
       onClick={() => handleError()}
     >
       {/* for names */}
-      <div className="pr-4 w-full min-[500px]:flex justify-between">
+      <div className="pr-4 w-full min-[650px]:flex justify-between">
         <div className="m-2 w-full">
           <input
             type="text"
@@ -56,7 +56,7 @@ const SignupForm = ({
         </div>
       </div>
       {/* for email and phone number */}
-      <div className="pr-4 w-full min-[500px]:flex justify-between">
+      <div className="pr-4 w-full min-[650px]:flex justify-between">
         <div className="m-2 w-full">
           <input
             type="text"
@@ -84,7 +84,7 @@ const SignupForm = ({
         </div>
       </div>
       {/* for Gender and technical skills */}
-      <div className="pr-4 w-full min-[500px]:flex justify-between">
+      <div className="pr-4 w-full min-[650px]:flex justify-between">
         <div className="m-2 text-left text-white p-2 flex">
           <label className="block">Gender:</label>
           <div className="px-2">
