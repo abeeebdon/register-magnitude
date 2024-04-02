@@ -9,7 +9,7 @@ const Section2 = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date().getTime()
-      const d = new Date('2024-04-5')
+      const d = new Date('2024-04-20')
       const eventDay = d.getTime()
       const presentDay = eventDay - now
       const timeleft = new Date(presentDay)

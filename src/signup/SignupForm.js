@@ -23,11 +23,11 @@ const SignupForm = ({
   return (
     <form
       onSubmit={(e) => handleSubmit(e)}
-      className="w-full p-4"
+      className="w-full"
       onClick={() => handleError()}
     >
       {/* for names */}
-      <div className="pr-4 w-full min-[650px]:flex justify-between">
+      <div className="pr-4 w-full sm:flex justify-between">
         <div className="m-2 w-full">
           <input
             type="text"
@@ -37,7 +37,7 @@ const SignupForm = ({
             onChange={(e) =>
               setUserDetails({ ...userDetails, firstname: e.target.value })
             }
-            className="input "
+            className="input"
           />
           {firstnameError && <p className="error">This is a required field</p>}
         </div>
@@ -115,6 +115,7 @@ const SignupForm = ({
         </div>
         <div className=" m-2 text-left text-white p-2 flex">
           <label className="block">Do you have any technical skills?</label>
+
           <div className="px-2">
             <input
               type="radio"
@@ -135,6 +136,7 @@ const SignupForm = ({
             />
             No
           </div>
+
           {skillError && (
             <div>
               <p className=" text-red-500 text-left">

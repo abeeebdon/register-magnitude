@@ -38,10 +38,21 @@ const Logos = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsiveness: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   }
 
   return (
-    <section className="w-[80%] max-w-[900px] mx-auto m-4 p-4">
+    <section className="w-[70%] mx-auto">
       <Slider {...settings}>
         <div className="w-full max-w-[250px]">
           <img src={image1} alt="img1" className="image" />
