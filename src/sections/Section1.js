@@ -11,7 +11,7 @@ const Section1 = () => {
             <br /> Nigeria
           </p>
         </div>
-        <div className=" bg-blue-950 p-6 text-white md:w-[80%] lg:mt-10 max-w-[900px] lg:text-left mx-auto lg:pt-8 lg:mr-[2%] ">
+        <div className="bg-blue-950 mx-4 p-6 text-white md:w-[80%] lg:mt-10 max-w-[900px] lg:text-left sm:mx-auto lg:pt-8 lg:mr-[2%] ">
           <div className="mt-4 lg:mt-6 lg:pt-4 lg:pb-8 lg:ml-10 lg:pl-10">
             <h2 className=" text-[1.9rem] lg:text-[2.2rem] font-bold">
               The Youth Summit 1.0
