@@ -12,6 +12,6 @@
     @apply w-[100%] h-[100%];
   }
   .countdown-heading {
-    @apply w-[100%] h-[100%] text-[3.5rem];
+    @apply w-[100%] h-[100%] font-semibold text-[2.9rem] sm:text-[4rem];
   }
 }
