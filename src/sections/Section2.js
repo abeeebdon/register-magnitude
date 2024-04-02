@@ -40,7 +40,7 @@ const Section2 = () => {
 
   return (
     <section className="font-rubik bg-blue-950 text-white p-8 m-4">
-      <div className="min-[650px]:flex max-[500px]:flex-col justify-evenly items-center max-w-[1000px] mx-auto">
+      <div className="sm:flex max-[500px]:flex-col justify-evenly items-center max-w-[1000px] mx-auto">
         <h2 className="font-bold text-[3rem] text-center">Event Countdown</h2>
         <div className="flex justify-between items-center gap-[1rem] min-[800]:gap-[6%]">
           <div className=" flex-col gap-0">
