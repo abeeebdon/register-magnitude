@@ -52,21 +52,21 @@ const Logos = () => {
   }
 
   return (
-    <section className="w-[70%] mx-auto">
+    <section className="w-[70%] mx-auto max-w-[650px]">
       <Slider {...settings}>
-        <div className="w-full max-w-[250px]">
+        <div className="logo">
           <img src={image1} alt="img1" className="image" />
         </div>
-        <div className="w-full max-w-[250px]">
+        <div className="logo">
           <img src={image2} alt="img1" className="image" />
         </div>
-        <div className="w-full max-w-[250px]">
+        <div className="logo">
           <img src={image2} alt="img1" className="image" />
         </div>
-        <div className="w-full max-w-[250px]">
+        <div className="logo">
           <img src={image1} alt="img1" className="image" />
         </div>
-        <div className="w-full max-w-[250px]">
+        <div className="logo">
           <img src={image2} alt="img1" className="image" />
         </div>
       </Slider>

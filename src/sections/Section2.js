@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 const Section2 = () => {
+  const EventDay = '2024-04-20'
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
@@ -9,7 +10,7 @@ const Section2 = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date().getTime()
-      const d = new Date('2024-04-20')
+      const d = new Date(EventDay)
       const eventDay = d.getTime()
       const presentDay = eventDay - now
       const timeleft = new Date(presentDay)

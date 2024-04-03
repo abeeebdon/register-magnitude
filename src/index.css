@@ -14,4 +14,7 @@
   .countdown-heading {
     @apply w-[100%] h-[100%] font-semibold text-[2.9rem] sm:text-[4rem];
   }
+  .logo {
+    @apply w-full max-w-[120px];
+  }
 }
