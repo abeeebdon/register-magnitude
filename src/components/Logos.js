@@ -52,7 +52,7 @@ const Logos = () => {
   }
 
   return (
-    <section className="w-[70%] mx-auto max-w-[650px]">
+    <section className="w-[86%] mx-auto max-w-[580px]">
       <Slider {...settings}>
         <div className="logo">
           <img src={image1} alt="img1" className="image" />
