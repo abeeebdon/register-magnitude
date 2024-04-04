@@ -1,6 +1,5 @@
 import React from 'react'
-import Guests from '../components/Guests'
-
+import Guests from './Guests'
 const Section3 = () => {
   return (
     <section className="text-center font-rubik">

@@ -1,4 +1,3 @@
-import Logos from '../components/Logos'
 const Section4 = () => {
   return (
     <section className="p-4 m-8 mt-[3rem] mx-auto ">
