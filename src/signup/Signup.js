@@ -82,7 +82,7 @@ const Signup = () => {
     fetchData()
   }
   return (
-    <section className="flex m-4 p-4">
+    <section className="py-6">
       <div className="w-full max-w-[800px] mx-auto my-auto mt-4 px-2 py-2 text-center bg-blue-950">
         <div className="p-4">
           <h1 className="text-white font-bold text-[2rem]">
