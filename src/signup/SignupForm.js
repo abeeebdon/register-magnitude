@@ -29,7 +29,7 @@ const SignupForm = ({
     >
       {/* for names */}
       <div className="pr-4 w-full sm:flex justify-between">
-        <div className="m-2 w-full">
+        <div className="m-2 my-4 w-full">
           <input
             type="text"
             id="Firstname"
@@ -42,7 +42,7 @@ const SignupForm = ({
           />
           {firstnameError && <p className="error">This is a required field</p>}
         </div>
-        <div className="m-2 w-full">
+        <div className="mx-2 my-4 w-full">
           <input
             type="text"
             id="Lastname"
@@ -57,8 +57,8 @@ const SignupForm = ({
         </div>
       </div>
       {/* for email and phone number */}
-      <div className="pr-4 w-full min-[650px]:flex justify-between">
-        <div className="m-2 w-full">
+      <div className="pr-4 w-full sm:flex justify-between">
+        <div className="mx-2 my-4 w-full">
           <input
             type="text"
             id="email"
@@ -71,7 +71,7 @@ const SignupForm = ({
           />
           {emailError && <p className="error">Please enter a valid email</p>}
         </div>
-        <div className="m-2 w-full">
+        <div className="mx-2 my-4 w-full">
           <input
             type="text"
             id="number"
@@ -85,7 +85,7 @@ const SignupForm = ({
         </div>
       </div>
       {/* for Gender and technical skills */}
-      <div className="pr-4 w-full min-[650px]:flex justify-between">
+      <div className="pr-4 w-full sm:flex justify-between">
         <div className="m-2 text-left text-white p-2 flex">
           <label className="block">Gender:</label>
           <div className="px-2">
@@ -148,10 +148,10 @@ const SignupForm = ({
         </div>
       </div>
       {/* How did you hear about us */}
-      <div className="text-left text-white p-2 ">
-        <label className="m-2">How did you hear about us</label>
+      <div className="m-2 text-left text-white p-2 sm:flex justify-start items-center gap-6">
+        <label className="w-fit">How did you hear about us</label>
         <select
-          className="text-white outline-none p-1 bg-blue-900"
+          className="text-white outline-none w-full sm:w-fit  bg-blue-900 w-full p-2"
           onChange={handleOptionChange}
         >
           <option className="option-input" value="">
