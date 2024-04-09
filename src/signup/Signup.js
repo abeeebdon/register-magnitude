@@ -23,6 +23,7 @@ const Signup = () => {
   const [genderError, setGenderError] = useState(false)
   const [skillError, setSkillError] = useState(false)
 
+  const [optionValue, setOptionValue] = useState('')
   const [errMsg, setErrMsg] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
@@ -37,7 +38,9 @@ const Signup = () => {
     setLocationError(false)
     setSkillError(false)
   }
-
+  const handleOptionChange = (e) => {
+    setOptionValue(e.target.value)
+  }
   const checkNumber = (value) => {
     if (isNaN(value)) return false
     setUserDetails({ ...userDetails, phoneNumber: value })
@@ -108,6 +111,7 @@ const Signup = () => {
           skills={skills}
           setSkills={setSkills}
           skillError={skillError}
+          handleOptionChange={handleOptionChange}
         />
       </div>
     </section>

@@ -17,4 +17,7 @@
   .logo {
     @apply w-full max-w-[100px];
   }
+  .option-input {
+    @apply text-white;
+  }
 }

@@ -19,6 +19,7 @@ const SignupForm = ({
   skills,
   setSkills,
   skillError,
+  handleOptionChange,
 }) => {
   return (
     <form
@@ -146,14 +147,40 @@ const SignupForm = ({
           )}
         </div>
       </div>
-
+      {/* How did you hear about us */}
+      <div className="text-left text-white p-2 ">
+        <label className="m-2">How did you hear about us</label>
+        <select
+          className="text-white outline-none p-1 bg-blue-900"
+          onChange={handleOptionChange}
+        >
+          <option className="option-input" value="">
+            Select an option
+          </option>
+          <option className="option-input" value="Facebook">
+            Facebook
+          </option>
+          <option className="option-input" value="WhatsApp">
+            WhatsApp
+          </option>
+          <option className="option-input" value="Google">
+            Google
+          </option>
+          <option className="option-input" value="Friends">
+            Friends
+          </option>
+          <option className="option-input" value="Others">
+            Others
+          </option>
+        </select>
+      </div>
       <div className="m-2">
         <input
           type="text"
           id="location"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
-          placeholder="Enter Your Home Address"
+          placeholder="Please Enter Your Location"
           className="input"
         />
         {locationError && <p className="error">This is a required field</p>}
