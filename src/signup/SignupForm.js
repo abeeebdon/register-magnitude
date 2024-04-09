@@ -174,7 +174,7 @@ const SignupForm = ({
           </option>
         </select>
       </div>
-      <div className="m-2">
+      <div className="m-4">
         <input
           type="text"
           id="location"
