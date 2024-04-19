@@ -22,7 +22,7 @@ const SignupForm = ({
   return (
     <form
       onSubmit={(e) => handleSubmit(e)}
-      className="w-full"
+      className="w-full relative"
       onClick={() => handleError()}
     >
       {/* for names */}
@@ -84,7 +84,7 @@ const SignupForm = ({
       </div>
       {/* for Gender and technical skills */}
       <div className="pr-4 w-full sm:flex justify-between">
-        <div className="m-2 text-left text-white p-2 flex">
+        <div className="m-2 text-left p-2 flex">
           <label className="block">Gender:</label>
           <div className="px-2">
             <input
@@ -112,7 +112,7 @@ const SignupForm = ({
             </p>
           )}
         </div>
-        <div className=" m-2 text-left text-white p-2 flex">
+        <div className=" m-2 text-left p-2 flex">
           <label className="block">Do you have any technical skills?</label>
 
           <div className="px-2">
@@ -146,21 +146,16 @@ const SignupForm = ({
         </div>
       </div>
       {/* How did you hear about us */}
-      <div className="m-2 text-left text-white p-2 sm:flex justify-start items-center gap-6">
+      <div className="m-2 text-left p-2 sm:flex justify-start items-center gap-6">
         <label className="w-fit">How did you hear about us</label>
         <select
-          className="text-white outline-none  sm:w-fit  bg-blue-900 w-full p-2"
+          className="text-white outline-none  sm:w-fit  bg-blue-400 w-full p-2"
           onChange={handleOptionChange}
         >
           <option className="option-input" value="">
             Select an option
           </option>
-          <option className="option-input" value="Facebook">
-            Facebook
-          </option>
-          <option className="option-input" value="WhatsApp">
-            WhatsApp
-          </option>
+
           <option className="option-input" value="Google">
             Google
           </option>
@@ -185,12 +180,14 @@ const SignupForm = ({
         />
         {locationError && <p className="error">This is a required field</p>}
       </div>
-      <div className="m-4 bg-blue-600 p-2 rounded-lg">
-        {isLoading ? (
-          <CgSpinner className=" mx-auto w-[3rem] text-[3rem] text-blue-400 animate-spin" />
-        ) : (
-          <button className="text-white font-semibold">Register here</button>
-        )}
+      <div className="relative">
+        <div className="m-4 bg-blue-600 p-2 w-full md:w-[40%] text-center rounded-lg absolute right-0">
+          {isLoading ? (
+            <CgSpinner className=" mx-auto w-[3rem] text-[3rem] text-blue-400 animate-spin" />
+          ) : (
+            <button className="text-white font-semibold">Register Here</button>
+          )}
+        </div>
       </div>
     </form>
   )
