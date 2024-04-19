@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 const Section2 = () => {
-  const EventDay = '2024-04-20' // set the date of the event
+  const EventDay = '2024-05-05' // set the date of the event
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
@@ -42,8 +42,10 @@ const Section2 = () => {
   return (
     <section className="font-rubik bg-blue-950 text-white p-8 sm:m-4">
       <div className="sm:flex max-[500px]:flex-col justify-between items-center max-w-[1000px] mx-auto">
-        <h2 className="font-bold text-[3rem] text-center">Event Countdown</h2>
-        <div className="flex justify-between items-center gap-[1rem] min-[800]:gap-[6%]">
+        <div>
+          <h2 className="font-bold text-[3rem] text-center">Event Countdown</h2>
+        </div>
+        <div className="flex justify-around items-center gap-[10%] md:gap-[1rem] p-2  ">
           <div className=" flex-col gap-0">
             <h1 className="countdown-heading">{countdown.days}</h1>
             <p className=" text-[1rem] font-semibold text-center">Days</p>
