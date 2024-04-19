@@ -9,12 +9,12 @@ const Signup = () => {
   // getting the input fields into an object as a state
   const [gender, setGender] = useState()
   const [skills, setSkills] = useState()
-  const [location, setLocation] = useState()
   const [userDetails, setUserDetails] = useState({
     firstname: '',
     lastname: '',
     phoneNumber: '',
     password: '',
+    location: '',
   })
   const [firstnameError, setFirstnameError] = useState(false)
   const [lastnameError, setLastnameError] = useState(false)
@@ -27,6 +27,18 @@ const Signup = () => {
   const [errMsg, setErrMsg] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
+
+  const URL = ''
+  const postData = {
+    first_name: userDetails.firstname,
+    last_name: userDetails.lastname,
+    email: userDetails.email,
+    phone: userDetails.phone,
+    gender: userDetails.gender,
+    technical_skill: userDetails.tech,
+    heard_by: optionValue,
+    location: userDetails.location,
+  }
 
   // fetchData connects the frontend to the backend
   //it is called upon submission and all validatiion runs
@@ -47,7 +59,15 @@ const Signup = () => {
 
     console.log(value)
   }
-  const fetchData = async () => {}
+  const fetchData = async () => {
+    try {
+      const datas = await axios.post(URL, postData)
+      const resp = await datas.json()
+      console.log(resp)
+    } catch (err) {
+      console.log(err)
+    }
+  }
   const handleSubmit = async (e) => {
     e.preventDefault()
     const firstnameRegex = /^[a-zA-Z]+$/ // Regular expression to match alphabetic characters only
@@ -68,7 +88,7 @@ const Signup = () => {
       // Check if email format is valid
       setEmailError(true)
     }
-    if (!location) {
+    if (!userDetails.location) {
       setLocationError(true)
     }
     if (!skills) {
@@ -92,8 +112,6 @@ const Signup = () => {
         <SignupForm
           gender={gender}
           setGender={setGender}
-          location={location}
-          setLocation={setLocation}
           userDetails={userDetails}
           setUserDetails={setUserDetails}
           handleSubmit={handleSubmit}

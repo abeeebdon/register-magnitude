@@ -6,8 +6,6 @@ const SignupForm = ({
   setUserDetails,
   gender,
   setGender,
-  location,
-  setLocation,
   isLoading,
   firstnameError,
   lastnameError,
@@ -96,7 +94,7 @@ const SignupForm = ({
               checked={gender === 'male'}
               onChange={() => setGender('male')}
             />
-            Male
+            <span className="mx-2">Male</span>
           </div>
           <div className="px-2">
             <input
@@ -106,7 +104,7 @@ const SignupForm = ({
               checked={gender === 'female'}
               onChange={() => setGender('female')}
             />
-            Female
+            <span className="mx-2">Female</span>
           </div>
           {genderError && (
             <p className="block text-red-500 text-left">
@@ -125,7 +123,7 @@ const SignupForm = ({
               checked={skills === 'yes'}
               onChange={() => setSkills('yes')}
             />
-            Yes
+            <span className="mx-2">Yes</span>
           </div>
           <div className="px-2">
             <input
@@ -135,7 +133,7 @@ const SignupForm = ({
               checked={skills === 'No'}
               onChange={() => setSkills('No')}
             />
-            No
+            <span className="mx-2">No</span>
           </div>
 
           {skillError && (
@@ -178,8 +176,10 @@ const SignupForm = ({
         <input
           type="text"
           id="location"
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
+          value={userDetails.location}
+          onChange={(e) =>
+            setUserDetails({ ...userDetails, location: e.target.value })
+          }
           placeholder="Please Enter Your Location"
           className="input"
         />
