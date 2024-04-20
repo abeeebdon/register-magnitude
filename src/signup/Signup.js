@@ -109,6 +109,13 @@ const Signup = () => {
             REGISTRATION FORM
           </h1>
         </div>
+        <div>
+          <p>
+            Please kindly register below to attend the events and be a part of
+            the first to
+            <p>know about the latest news and features</p>
+          </p>
+        </div>
         <SignupForm
           gender={gender}
           setGender={setGender}
