@@ -4,18 +4,15 @@ const SignupForm = ({
   userDetails,
   handleSubmit,
   setUserDetails,
-  gender,
-  setGender,
   isLoading,
   firstnameError,
   lastnameError,
   emailError,
+  errMsg,
   locationError,
   genderError,
   checkNumber,
   handleError,
-  skills,
-  setSkills,
   skillError,
   handleOptionChange,
 }) => {
@@ -90,9 +87,11 @@ const SignupForm = ({
             <input
               type="radio"
               name="gender"
-              value="male"
-              checked={gender === 'male'}
-              onChange={() => setGender('male')}
+              value="true"
+              checked={userDetails.gender === 'true'}
+              onChange={(e) =>
+                setUserDetails({ ...userDetails, gender: e.target.value })
+              }
             />
             <span className="mx-2">Male</span>
           </div>
@@ -100,17 +99,14 @@ const SignupForm = ({
             <input
               type="radio"
               name="gender"
-              value="female"
-              checked={gender === 'female'}
-              onChange={() => setGender('female')}
+              value="false"
+              checked={userDetails.gender === 'false'}
+              onChange={(e) =>
+                setUserDetails({ ...userDetails, gender: e.target.value })
+              }
             />
             <span className="mx-2">Female</span>
           </div>
-          {genderError && (
-            <p className="block text-red-500 text-left">
-              Please select your gender
-            </p>
-          )}
         </div>
         <div className=" m-2 text-left p-2 flex">
           <label className="block">Do you have any technical skills?</label>
@@ -119,31 +115,32 @@ const SignupForm = ({
             <input
               type="checkbox"
               name="gender"
-              value="Yes"
-              checked={skills === 'yes'}
-              onChange={() => setSkills('yes')}
+              value="true"
+              checked={userDetails.skills === 'true'}
+              onChange={(e) =>
+                setUserDetails({ ...userDetails, skills: e.target.value })
+              }
             />
-            <span className="mx-2">Yes</span>
+            <span className="sm:mx-2">Yes</span>
           </div>
           <div className="px-2">
             <input
               type="checkbox"
               name="gender"
-              value="No"
-              checked={skills === 'No'}
-              onChange={() => setSkills('No')}
+              value="false"
+              checked={userDetails.skills === 'false'}
+              onChange={(e) =>
+                setUserDetails({ ...userDetails, skills: e.target.value })
+              }
             />
-            <span className="mx-2">No</span>
+            <span className="sm:mx-2">No</span>
           </div>
-
-          {skillError && (
-            <div>
-              <p className=" text-red-500 text-left">
-                This is a required field
-              </p>
-            </div>
-          )}
         </div>
+      </div>
+      <div className="mx-4">
+        {skillError && genderError && (
+          <p className=" text-red-500 text-left">This is a required field</p>
+        )}
       </div>
       {/* How did you hear about us */}
       <div className="m-2 text-left p-2 sm:flex justify-start items-center gap-6">
@@ -180,9 +177,12 @@ const SignupForm = ({
         />
         {locationError && <p className="error">This is a required field</p>}
       </div>
-      <div className="bg-blue-400 p-3 rounded-lg mx-auto w-[85%] md:w-[50%]">
+      <div className="text-red-400 text-[1rem] m-2">
+        <p>{errMsg}</p>
+      </div>
+      <div className="bg-blue-400 p-3 rounded-lg mx-auto w-[92%] md:w-[50%]">
         {isLoading ? (
-          <CgSpinner className=" mx-auto w-[3rem] text-[3rem] text-blue-400 animate-spin" />
+          <CgSpinner className=" mx-auto w-[3rem] text-[3rem]  animate-spin" />
         ) : (
           <button className="text-white font-semibold">Register Here</button>
         )}

@@ -1,20 +1,20 @@
 import { useState } from 'react'
-// import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import SignupForm from './SignupForm'
 import axios from 'axios'
 
 const Signup = () => {
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
 
   // getting the input fields into an object as a state
-  const [gender, setGender] = useState()
-  const [skills, setSkills] = useState()
   const [userDetails, setUserDetails] = useState({
     firstname: '',
     lastname: '',
     phoneNumber: '',
     password: '',
     location: '',
+    gender: '',
+    skills: '',
   })
   const [firstnameError, setFirstnameError] = useState(false)
   const [lastnameError, setLastnameError] = useState(false)
@@ -28,19 +28,19 @@ const Signup = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
 
-  const URL = ''
+  const URL = 'https://entacrest.azurewebsites.net/reg/register/'
   const postData = {
     first_name: userDetails.firstname,
     last_name: userDetails.lastname,
     email: userDetails.email,
-    phone: userDetails.phone,
+    phone: userDetails.phoneNumber,
     gender: userDetails.gender,
-    technical_skill: userDetails.tech,
+    technical_skill: userDetails.skills,
     heard_by: optionValue,
     location: userDetails.location,
   }
-
   // fetchData connects the frontend to the backend
+
   //it is called upon submission and all validatiion runs
   const handleError = () => {
     setEmailError(false)
@@ -61,13 +61,19 @@ const Signup = () => {
   }
   const fetchData = async () => {
     try {
-      const datas = await axios.post(URL, postData)
-      const resp = await datas.json()
+      const data = await axios.post(URL, postData)
+      const resp = await data.json()
       console.log(resp)
+      navigate('/success')
+      setIsLoading(false)
     } catch (err) {
+      setIsLoading(false)
       console.log(err)
+      const error = err?.response?.data?.message
+      setErrMsg(error)
     }
   }
+  console.log(genderError)
   const handleSubmit = async (e) => {
     e.preventDefault()
     const firstnameRegex = /^[a-zA-Z]+$/ // Regular expression to match alphabetic characters only
@@ -88,16 +94,19 @@ const Signup = () => {
       // Check if email format is valid
       setEmailError(true)
     }
-    if (!userDetails.location) {
-      setLocationError(true)
-    }
-    if (!skills) {
+
+    if (!userDetails.skills) {
       setSkillError(true)
     }
-    if (!gender) {
+    if (!userDetails.gender) {
       setGenderError(true)
       return
     }
+    if (!userDetails.location) {
+      setLocationError(true)
+      return
+    }
+    setIsLoading(true)
 
     fetchData()
   }
@@ -117,8 +126,6 @@ const Signup = () => {
           </p>
         </div>
         <SignupForm
-          gender={gender}
-          setGender={setGender}
           userDetails={userDetails}
           setUserDetails={setUserDetails}
           handleSubmit={handleSubmit}
@@ -133,8 +140,6 @@ const Signup = () => {
           locationError={locationError}
           genderError={genderError}
           handleError={handleError}
-          skills={skills}
-          setSkills={setSkills}
           skillError={skillError}
           handleOptionChange={handleOptionChange}
         />
