@@ -1,5 +1,5 @@
 import { FaCheck } from 'react-icons/fa'
-
+import { Link } from 'react-router-dom'
 const Success = () => {
   return (
     <div className="w-full max-w-[400px]  mx-auto my-auto px-2 py-4 mt-8">
@@ -12,6 +12,9 @@ const Success = () => {
           <p className="w-[70%] mx-auto my-1 text-[1rem]">
             You have successfully registered for this event
           </p>
+          <Link to="/">
+            <p className="text-white bg-blue-500 p-1">Go Back</p>
+          </Link>
         </div>
       </div>
     </div>

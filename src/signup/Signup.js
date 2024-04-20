@@ -49,6 +49,7 @@ const Signup = () => {
     setGenderError(false)
     setLocationError(false)
     setSkillError(false)
+    setIsError(false)
   }
   const handleOptionChange = (e) => {
     setOptionValue(e.target.value)
@@ -56,24 +57,24 @@ const Signup = () => {
   const checkNumber = (value) => {
     if (isNaN(value)) return false
     setUserDetails({ ...userDetails, phoneNumber: value })
-
-    console.log(value)
   }
   const fetchData = async () => {
     try {
-      const data = await axios.post(URL, postData)
-      const resp = await data.json()
+      setIsError(false)
+      const resp = await axios.post(URL, postData)
       console.log(resp)
-      navigate('/success')
-      setIsLoading(false)
+
+      if (resp.status === 201) {
+        setIsLoading(false)
+        navigate('/success')
+      }
     } catch (err) {
+      setIsError(true)
       setIsLoading(false)
-      console.log(err)
       const error = err?.response?.data?.message
       setErrMsg(error)
     }
   }
-  console.log(genderError)
   const handleSubmit = async (e) => {
     e.preventDefault()
     const firstnameRegex = /^[a-zA-Z]+$/ // Regular expression to match alphabetic characters only

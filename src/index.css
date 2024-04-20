@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer components {
   .input {
-    @apply w-full  px-2 sm:px-4 py-2 border border-slate-300 text-blue-600 rounded-lg;
+    @apply w-full  px-2 sm:px-4 py-2 border border-slate-300  rounded-lg;
   }
   .error {
     @apply text-red-500 text-left px-3;

@@ -9,6 +9,7 @@ const SignupForm = ({
   lastnameError,
   emailError,
   errMsg,
+  isError,
   locationError,
   genderError,
   checkNumber,
@@ -177,9 +178,11 @@ const SignupForm = ({
         />
         {locationError && <p className="error">This is a required field</p>}
       </div>
-      <div className="text-red-400 text-[1rem] m-2">
-        <p>{errMsg}</p>
-      </div>
+      {isError && (
+        <div className="text-red-400 text-[1rem] m-2">
+          <p>{errMsg}</p>
+        </div>
+      )}
       <div className="bg-blue-400 p-3 rounded-lg mx-auto w-[92%] md:w-[50%]">
         {isLoading ? (
           <CgSpinner className=" mx-auto w-[3rem] text-[3rem]  animate-spin" />
