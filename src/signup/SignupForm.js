@@ -181,7 +181,7 @@ const SignupForm = ({
         {locationError && <p className="error">This is a required field</p>}
       </div>
       <div className="relative">
-        <div className="m-4 bg-blue-600 p-2 w-full md:w-[40%] text-center rounded-lg absolute right-0">
+        <div className="m-4 bg-blue-600 p-2 w-full md:w-[40%] text-center rounded-lg sm:absolute right-0 top-0">
           {isLoading ? (
             <CgSpinner className=" mx-auto w-[3rem] text-[3rem] text-blue-400 animate-spin" />
           ) : (
