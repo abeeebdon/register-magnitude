@@ -149,7 +149,7 @@ const SignupForm = ({
       <div className="m-2 text-left p-2 sm:flex justify-start items-center gap-6">
         <label className="w-fit">How did you hear about us</label>
         <select
-          className="text-white outline-none  sm:w-fit  bg-blue-300 w-full p-2"
+          className="text-white outline-none  sm:w-fit  bg-blue-300 w-full p-2 my-2"
           onChange={handleOptionChange}
         >
           <option className="option-input" value="">
@@ -180,14 +180,12 @@ const SignupForm = ({
         />
         {locationError && <p className="error">This is a required field</p>}
       </div>
-      <div className="relative">
-        <div className="m-4 bg-blue-600 p-2 w-full md:w-[40%] text-center rounded-lg ">
-          {isLoading ? (
-            <CgSpinner className=" mx-auto w-[3rem] text-[3rem] text-blue-400 animate-spin" />
-          ) : (
-            <button className="text-white font-semibold">Register Here</button>
-          )}
-        </div>
+      <div className="bg-blue-400 p-3 rounded-lg mx-auto w-[85%] md:w-[50%]">
+        {isLoading ? (
+          <CgSpinner className=" mx-auto w-[3rem] text-[3rem] text-blue-400 animate-spin" />
+        ) : (
+          <button className="text-white font-semibold">Register Here</button>
+        )}
       </div>
     </form>
   )
