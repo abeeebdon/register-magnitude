@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section1 = () => {
   return (
-    <div className="bg-gradient-to-br from-white to-blue-300">
+    <div className="">
       <div className="max-w-[1100px] mx-auto flex flex-col relative ">
         <div className="w-fit border-[1rem] border-white rounded-full bg-blue-950 p-4 mx-auto my-4 sm:h-fit lg:absolute top-[10%]">
           <p className=" text-white mx-auto font-bold px-4 py-10 text-[1.4rem] sm:text-[1.75rem]">
