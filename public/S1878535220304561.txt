@@ -1,0 +1,11 @@
+Angélica Escobar, Miriam Pérez, Gustavo Romanelli, Guillermo Blustein,
+Thymol bioactivity: A review focusing on practical applications,
+Arabian Journal of Chemistry,
+Volume 13, Issue 12,
+2020,
+Pages 9243-9269,
+ISSN 1878-5352,
+https://doi.org/10.1016/j.arabjc.2020.11.009.
+(https://www.sciencedirect.com/science/article/pii/S1878535220304561)
+Abstract: Thymol is a natural volatile monoterpenoid phenol that is the main active ingredient of oil extracted from species Thymus vulgaris L., commonly known as thyme, and other plants such as Ocimum gratissimum L., Origanum L., Carum copticum L., different species of the genus Satureja L., Oliveria decumbens Vent, and many others. It is a versatile molecule with a wide variety of practical applications such as medical, dentistry, veterinary, food, and agrochemicals, among others. Its pharmacological applications have been the most investigated and reported, focusing on its prominent antimicrobial, antioxidant, anti-inflammatory, cicatrizing activities. Furthermore, it is noteworthy that the research on its agricultural applications has increased, highlighting its uses as a natural agrochemical and preservative to safeguard foods from pathogenic microorganisms both in sowing and storage, which could have a beneficial effect on human health and the environment. Research has also been reported on its activity as an insecticide, acaricide, and animal repellent. This review summarizes important aspects of thymol such as its bioavailability, synthesis, and biological activities, with special interest in practical applications.
+Keywords: Thymol; Synthesis; Mechanism of action; Bioactivity

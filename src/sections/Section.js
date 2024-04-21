@@ -1,12 +1,11 @@
 const Section = () => {
   return (
     <div
-      className=" h-[350px] sm:h-[70vh] bg-cover font-arial "
+      className=" h-[350px] sm:h-[70vh] font-arial"
       style={{
         backgroundImage:
-          'linear-gradient(to right, rgba(100,140,130,0.65), rgba(70,100,50,0.6)), url("/NYSC.jpg")',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
+          'linear-gradient(to right, rgba(170,80,200,0.8), rgba(170,0,100,0.6)), url("/img.png")',
+        backgroundRepeat: 'no repeat',
       }}
     >
       <div className="py-10">

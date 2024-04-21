@@ -10,9 +10,9 @@ const Index = () => {
   return (
     <main className=" w-full">
       <Section />
+      <Section2 />
       <Signup />
       <Section1 />
-      <Section2 />
       <Section3 />
       <Section4 />
       <Logos />
