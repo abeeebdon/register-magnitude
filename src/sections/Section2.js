@@ -40,7 +40,7 @@ const Section2 = () => {
   }, [countdown.days])
 
   return (
-    <section className="font-rubik bg-blue-950 text-white py-8 sm:my-4">
+    <section className="font-rubik bg-[rgba(149,88,247,0.8)] text-white py-4 sm:my-2">
       <div className="sm:flex max-[500px]:flex-col justify-between items-center max-w-[1000px] mx-auto">
         <div>
           <h2 className="font-bold text-[3rem] text-center">Event Countdown</h2>

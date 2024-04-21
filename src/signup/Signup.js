@@ -25,7 +25,7 @@ const Signup = ({ setSuccess }) => {
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
 
-  const URL = 'https://entacrest.azurewebsites.net/reg/register/'
+  // const URL = ''
   const postData = {
     first_name: userDetails.firstname,
     last_name: userDetails.lastname,
@@ -56,6 +56,7 @@ const Signup = ({ setSuccess }) => {
     setUserDetails({ ...userDetails, phoneNumber: value })
   }
   const fetchData = async () => {
+    setSuccess(true)
     try {
       setIsError(false)
       const resp = await axios.post(URL, postData)

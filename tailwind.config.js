@@ -3,14 +3,20 @@ module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   theme: {
     extend: {
-      backgroundImage: {
-        hero: "url('/images/NYSC.jpg')",
+      keyframes: {
+        slideDown: {
+          '0%': {
+            top: 0,
+          },
+          '100%': {
+            top: '50%',
+          },
+        },
       },
     },
     fontFamily: {
       rubik: ['Rubik', 'sans-serif'],
     },
-    extend: {},
   },
   plugins: [],
 }
