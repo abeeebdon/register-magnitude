@@ -1,11 +1,8 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import SignupForm from './SignupForm'
 import axios from 'axios'
 
-const Signup = () => {
-  const navigate = useNavigate()
-
+const Signup = ({ setSuccess }) => {
   // getting the input fields into an object as a state
   const [userDetails, setUserDetails] = useState({
     firstname: '',
@@ -66,7 +63,7 @@ const Signup = () => {
 
       if (resp.status === 201) {
         setIsLoading(false)
-        navigate('/success')
+        setSuccess(true)
       }
     } catch (err) {
       setIsError(true)

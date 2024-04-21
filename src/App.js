@@ -1,12 +1,24 @@
-import { Route, Routes } from 'react-router-dom'
-import Success from './Success'
-import Home from './Home/Index'
+import React, { useState } from 'react'
+import Signup from './signup/Signup'
+import Section1 from './sections/Section1'
+import Section3 from './sections/Section3'
+import Section2 from './sections/Section2'
+import Section4 from './sections/Section4'
+import Logos from './sections/Logos'
+import Section from './sections/Section'
+
 function App() {
+  const [success, setSuccess] = useState(false)
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/success" element={<Success />} />
-    </Routes>
+    <main className=" w-full">
+      <Section />
+      <Section2 />
+      <Signup setSuccess={setSuccess} />
+      <Section1 />
+      <Section3 />
+      <Section4 />
+      <Logos />
+    </main>
   )
 }
 export default App
