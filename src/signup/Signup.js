@@ -112,7 +112,7 @@ const Signup = ({ setSuccess }) => {
   return (
     <section
       id="register"
-      className="bg-gradient-to-tl to-white from-[rgba(212,133,189,0.8)] pb-4"
+      className="bg-gradient-to-bl to-white from-[rgba(212,133,189,0.8)] pb-4"
     >
       <div className="w-full max-w-[900px] mx-auto my-auto  px-2 py-2 text-center ">
         <div className="p-4">
