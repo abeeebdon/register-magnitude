@@ -147,7 +147,7 @@ const SignupForm = ({
       <div className="m-2 text-left p-2 sm:flex justify-start items-center gap-6">
         <label className="w-fit">How did you hear about us</label>
         <select
-          className="text-white outline-none  sm:w-fit  bg-blue-300 w-full p-2 my-2"
+          className="text-white outline-none  sm:w-fit  bg-[rgb(161,136,185)] w-full p-2 my-2"
           onChange={handleOptionChange}
         >
           <option className="option-input" value="">
@@ -183,11 +183,13 @@ const SignupForm = ({
           <p>{errMsg}</p>
         </div>
       )}
-      <div className="bg-blue-400 p-3 rounded-lg mx-auto w-[92%] md:w-[50%]">
+      <div className="bg-purple-600 p-3 rounded-lg mx-auto w-[92%] md:w-[50%]">
         {isLoading ? (
           <CgSpinner className=" mx-auto w-[3rem] text-[3rem]  animate-spin" />
         ) : (
-          <button className="text-white font-semibold">Register Here</button>
+          <button className="text-white font-semibold w-full">
+            Register Here
+          </button>
         )}
       </div>
     </form>
