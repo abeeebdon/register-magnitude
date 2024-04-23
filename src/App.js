@@ -20,7 +20,7 @@ function App() {
     return <Success />
   } else {
     return (
-      <main className=" w-full">
+      <main className=" w-full bg-purple-100">
         <Section />
         <Section2 />
         <Signup setSuccess={setSuccess} />

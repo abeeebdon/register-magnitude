@@ -22,6 +22,6 @@
     @apply w-[100%] h-[100%] border border-slate-400 rounded-[50%];
   }
   .option-input {
-    @apply text-white;
+    @apply text-purple-900 text-[1.2rem] hover:bg-purple-500;
   }
 }

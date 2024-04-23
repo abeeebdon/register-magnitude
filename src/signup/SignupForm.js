@@ -24,8 +24,8 @@ const SignupForm = ({
       onClick={() => handleError()}
     >
       {/* for names */}
-      <div className="pr-4 w-full sm:flex justify-between">
-        <div className="m-2 my-4 w-full">
+      <div className="pr-4 w-full max-w-[550px] mx-auto justify-between">
+        <div className="m-2 my-6 w-full">
           <input
             type="text"
             id="Firstname"
@@ -53,8 +53,8 @@ const SignupForm = ({
         </div>
       </div>
       {/* for email and phone number */}
-      <div className="pr-4 w-full sm:flex justify-between">
-        <div className="mx-2 my-4 w-full">
+      <div className="pr-4 w-full max-w-[550px] mx-auto justify-between">
+        <div className="mx-2 my-6 w-full">
           <input
             type="text"
             id="email"
@@ -81,7 +81,7 @@ const SignupForm = ({
         </div>
       </div>
       {/* for Gender and technical skills */}
-      <div className="pr-4 w-full sm:flex justify-between">
+      <div className="pr-4 w-full max-w-[550px] mx-auto justify-between">
         <div className="m-2 text-left p-2 flex">
           <label className="block">Gender:</label>
           <div className="px-2">
@@ -144,10 +144,11 @@ const SignupForm = ({
         )}
       </div>
       {/* How did you hear about us */}
-      <div className="m-2 text-left p-2 sm:flex justify-start items-center gap-6">
-        <label className="w-fit">How did you hear about us</label>
+      <div className="m-2 text-left p-2  mx-auto max-w-[550px] justify-start items-center gap-6">
+        <label className="block w-fit">How did you hear about us?</label>
+
         <select
-          className="text-white outline-none  sm:w-fit  bg-[rgb(161,136,185)] w-full p-2 my-2"
+          className="outline-none w-full p-2 my-2"
           onChange={handleOptionChange}
         >
           <option className="option-input" value="">
@@ -165,7 +166,7 @@ const SignupForm = ({
           </option>
         </select>
       </div>
-      <div className="m-4">
+      <div className="m-4 max-w-[550px] mx-auto">
         <input
           type="text"
           id="location"
@@ -183,11 +184,11 @@ const SignupForm = ({
           <p>{errMsg}</p>
         </div>
       )}
-      <div className="bg-purple-600 p-3 rounded-lg mx-auto w-[92%] md:w-[50%]">
+      <div className="mx-auto pb-10 w-[100%] max-w-[550px] relative">
         {isLoading ? (
           <CgSpinner className=" mx-auto w-[3rem] text-[3rem]  animate-spin" />
         ) : (
-          <button className="text-white font-semibold w-full outline-none">
+          <button className="bg-purple-600 p-3 rounded-lg text-white font-semibold w-full outline-none sm:max-w-[200px] sm:absolute right-0">
             Register Here
           </button>
         )}
