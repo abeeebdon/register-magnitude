@@ -13,7 +13,7 @@
   }
 
   .countdown-heading {
-    @apply w-[100%] h-[100%] font-semibold text-[2.9rem] sm:text-[3.5rem];
+    @apply w-[100%] h-[100%] font-semibold text-[2.7rem] sm:text-[3.5rem];
   }
   .logo {
     @apply w-full h-[150px] max-w-[150px] m-2 mx-6;
@@ -23,5 +23,8 @@
   }
   .option-input {
     @apply text-purple-900 text-[1.2rem] hover:bg-purple-500;
+  }
+  .registernabout {
+    @apply text-5xl font-bold text-[rgb(100,85,255)];
   }
 }

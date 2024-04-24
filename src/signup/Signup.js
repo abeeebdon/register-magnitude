@@ -110,12 +110,10 @@ const Signup = ({ setSuccess }) => {
     fetchData()
   }
   return (
-    <section id="register" className=" pb-4">
-      <div className="w-full max-w-[900px] mx-auto my-auto  px-2 py-2 text-center ">
+    <section id="register" className="basis-[50%]">
+      <div className="mx-auto my-auto  px-2 py-2 text-center ">
         <div className="p-4">
-          <h1 className=" font-extrabold text-5xl text-[rgb(100,85,255)]">
-            REGISTRATION FORM
-          </h1>
+          <h1 className="registernabout">REGISTER</h1>
         </div>
         <div>
           <p>

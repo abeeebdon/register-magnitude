@@ -20,7 +20,7 @@ const SignupForm = ({
   return (
     <form
       onSubmit={(e) => handleSubmit(e)}
-      className="w-full relative"
+      className=""
       onClick={() => handleError()}
     >
       {/* for names */}
@@ -82,7 +82,7 @@ const SignupForm = ({
       </div>
       {/* for Gender and technical skills */}
       <div className="pr-4 w-full max-w-[550px] mx-auto justify-between">
-        <div className="m-2 text-left p-2 flex">
+        <div className="p-2 text-left  flex">
           <label className="block">Gender:</label>
           <div className="px-2">
             <input
@@ -109,7 +109,7 @@ const SignupForm = ({
             <span className="mx-2">Female</span>
           </div>
         </div>
-        <div className=" m-2 text-left p-2 flex">
+        <div className=" m-2 text-left  flex">
           <label className="block">Do you have any technical skills?</label>
 
           <div className="px-2">
@@ -122,7 +122,7 @@ const SignupForm = ({
                 setUserDetails({ ...userDetails, skills: e.target.value })
               }
             />
-            <span className="sm:mx-2">Yes</span>
+            <span className="md:mx-2">Yes</span>
           </div>
           <div className="px-2">
             <input
