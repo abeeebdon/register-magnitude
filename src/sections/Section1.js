@@ -2,7 +2,7 @@ const Section1 = () => {
   return (
     <div className="py-8">
       <div className="max-w-[1100px] mx-auto flex flex-col relative ">
-        <div className="w-fit border-[1rem] border-white rounded-full bg-[rgb(85,78,150)] p-4 mx-auto my-4 sm:h-fit lg:absolute top-[10%]">
+        <div className="w-fit border-[1rem] border-white rounded-full bg-[rgb(85,78,150)] p-4 mx-auto my-4 sm:h-fit lg:absolute   top-[10%]">
           <p className=" text-white text-center mx-auto font-bold px-4 py-10 text-[1.4rem] sm:text-[1.75rem] ">
             The Youth <br />
             Social Summit

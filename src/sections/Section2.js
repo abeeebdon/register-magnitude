@@ -43,9 +43,7 @@ const Section2 = () => {
     <section className="font-rubik bg-white text-blue-500 py-4">
       <div className="sm:flex max-[500px]:flex-col justify-between items-center max-w-[1000px] mx-auto">
         <div>
-          <h2 className="font-bold text-[2.5rem] sm:text-[3rem] text-center">
-            Event Countdown
-          </h2>
+          <h2 className="font-bold text-[4rem] text-center">Event Countdown</h2>
         </div>
         <div className="flex justify-around items-center gap-[10%] md:gap-[1rem] p-2  ">
           <div className=" flex-col gap-0">
