@@ -6,8 +6,9 @@ const Section = () => {
       className=" h-[350px] sm:h-[70vh] font-arial"
       style={{
         backgroundImage:
-          'linear-gradient(to right, rgba(170,80,200,0.8), rgba(170,0,100,0.6)), url("/img.png")',
+          'linear-gradient(to right, rgba(200,100,20,0.8), rgba(20,50,150,0.8)), url("/NYSC.jpg")',
         backgroundRepeat: 'no repeat',
+        backgroundSize: 'cover',
       }}
     >
       <div className="py-10">

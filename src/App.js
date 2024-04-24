@@ -10,11 +10,11 @@ import Success from './Success'
 
 function App() {
   const [success, setSuccess] = useState(false)
-  useEffect(() => {
-    setTimeout(() => {
-      setSuccess(false)
-    }, 2000)
-  }, [success])
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setSuccess(false)
+  //   }, 2000)
+  // }, [success])
 
   if (success) {
     return <Success />

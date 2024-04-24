@@ -25,7 +25,7 @@ const Signup = ({ setSuccess }) => {
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
 
-  // const URL = ''
+  const URL = 'https://entacrest.azurewebsites.net/reg/register/'
   const postData = {
     first_name: userDetails.firstname,
     last_name: userDetails.lastname,
@@ -110,13 +110,10 @@ const Signup = ({ setSuccess }) => {
     fetchData()
   }
   return (
-    <section
-      id="register"
-      className="bg-gradient-to-bl to-white from-[rgba(212,133,189,0.8)] pb-4"
-    >
+    <section id="register" className=" pb-4">
       <div className="w-full max-w-[900px] mx-auto my-auto  px-2 py-2 text-center ">
         <div className="p-4">
-          <h1 className=" font-extrabold text-5xl text-[rgb(177,85,202)]">
+          <h1 className=" font-extrabold text-5xl text-[rgb(100,85,255)]">
             REGISTRATION FORM
           </h1>
         </div>
