@@ -20,7 +20,7 @@ function App() {
     return <Success />
   } else {
     return (
-      <main className=" w-full bg-purple-100">
+      <main className=" w-full bg-white">
         <Section />
         <Section2 />
         <Section5 success={success} />

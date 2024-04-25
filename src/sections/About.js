@@ -2,9 +2,12 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="text-center basis-[50%] pt-8">
-      <h2 className="registernabout">About us</h2>
-      <p className="p-4">
+    <div className="basis-[50%] pt-8 max-w-[550px]">
+      <h2 className=" text-center registernabout">
+        ABOUT THE <br />
+        PROGRAM
+      </h2>
+      <p className="py-4 my-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit
         amet dolor quam. Integer auctor lectus sit amet turpis ullamcorper, id
         lacinia metus ullamcorper. Nullam hendrerit sapien nec magna
@@ -15,13 +18,6 @@ const About = () => {
         interdum quam viverra. Nam consequat ex vel libero sodales, vitae cursus
         ligula tempor. Sed at libero nec nunc elementum venenatis a non nulla.
         Ut et convallis ligula. Suspendisse potenti. Vivamus ut mauris in dolor
-        lacinia rhoncus. Suspendisse potenti. Nunc dapibus nisi sit amet nisi
-        luctus, nec malesuada libero consequat. In hac habitasse platea
-        dictumst. Integer consequat vestibulum justo, ac efficitur nisi commodo
-        id. Maecenas vitae fermentum turpis. Sed auctor arcu vitae bibendum
-        ultrices. Vivamus et lorem pretium, iaculis velit vel, efficitur ipsum.
-        dictum vitae. Sed tristique tellus non nulla tincidunt, vel lobortis
-        enim fermentum
       </p>
     </div>
   )
