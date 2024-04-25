@@ -8,9 +8,9 @@ const Section1 = () => {
             <br /> CONFERENCE
           </p>
         </div>
-        <div className="sm:bg-[rgb(85,78,200)] text-purple-900 p-6 sm:text-white md:w-[80%] lg:mt-10 max-w-[900px] lg:text-left sm:mx-auto lg:pt-8 lg:mr-[2%] ">
+        <div className="sm:bg-[rgb(85,78,200)]  p-6 sm:text-white md:w-[80%] lg:mt-10 max-w-[900px] lg:text-left sm:mx-auto lg:pt-8 lg:mr-[2%] ">
           <div className="mt-4 lg:mt-6 lg:pt-4 lg:pb-8 lg:ml-10 lg:pl-10">
-            <h2 className="text-[1.9rem] lg:text-[2.2rem] font-bold">
+            <h2 className="text-[1.9rem] lg:text-[2.2rem] text-center sm:text-white font-bold text-blue-600">
               21ST CENTURY DIGITAL CORPS CONFERENCE
             </h2>
             <p className="w-full mt-2 text-[1rem] lg:text-xl">

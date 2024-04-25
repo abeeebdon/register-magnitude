@@ -42,10 +42,10 @@ const Section2 = () => {
   return (
     <section className="font-rubik bg-white text-blue-600 py-4">
       <div className="sm:flex max-[500px]:flex-col justify-between items-center max-w-[1000px] mx-auto">
-        <div>
-          <h2 className="font-bold text-[4rem] text-center">Event Countdown</h2>
+        <div className="text-[2.5rem] leading-tight">
+          <h2 className="font-bold text-center">Event Countdown</h2>
         </div>
-        <div className="flex justify-around items-center gap-[10%] md:gap-[1rem] p-2  ">
+        <div className="flex justify-around items-center gap-[5%] md:gap-[1rem] p-2 ">
           <div className=" flex-col gap-0">
             <h1 className="countdown-heading">{countdown.days}</h1>
             <p className=" text-[1rem] font-semibold text-center">Days</p>

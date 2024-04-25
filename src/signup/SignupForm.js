@@ -25,7 +25,7 @@ const SignupForm = ({
     >
       {/* for names */}
       <div className="pr-4 w-full max-w-[550px] mx-auto justify-between">
-        <div className="m-2 my-6 w-full">
+        <div className="m-2 my-4 w-full">
           <input
             type="text"
             id="Firstname"
@@ -54,7 +54,7 @@ const SignupForm = ({
       </div>
       {/* for email and phone number */}
       <div className="pr-4 w-full max-w-[550px] mx-auto justify-between">
-        <div className="mx-2 my-6 w-full">
+        <div className="mx-2 my-4 w-full">
           <input
             type="text"
             id="email"
@@ -82,7 +82,7 @@ const SignupForm = ({
       </div>
       {/* for Gender and technical skills */}
       <div className="pr-4 w-full max-w-[550px] mx-auto justify-between">
-        <div className="p-2 text-left  flex">
+        <div className="p-2 text-left flex">
           <label className="block">Gender:</label>
           <div className="px-2">
             <input
@@ -109,7 +109,7 @@ const SignupForm = ({
             <span className="mx-2">Female</span>
           </div>
         </div>
-        <div className=" m-2 text-left  flex">
+        <div className="m-2 text-left  flex">
           <label className="block">Do you have any technical skills?</label>
 
           <div className="px-2">
@@ -148,7 +148,7 @@ const SignupForm = ({
         <label className="block w-fit">How did you hear about us?</label>
 
         <select
-          className="outline-none w-full p-2 my-2"
+          className="outline-none w-full p-2"
           onChange={handleOptionChange}
         >
           <option className="option-input" value="">
@@ -166,7 +166,7 @@ const SignupForm = ({
           </option>
         </select>
       </div>
-      <div className="m-4 max-w-[550px] mx-auto">
+      <div className="max-w-[550px] mx-auto">
         <input
           type="text"
           id="location"
@@ -184,7 +184,7 @@ const SignupForm = ({
           <p>{errMsg}</p>
         </div>
       )}
-      <div className="mx-auto pb-10 w-[100%] max-w-[550px] relative">
+      <div className="mx-auto m-4 pb-14 w-[100%] max-w-[550px] relative">
         {isLoading ? (
           <CgSpinner className=" mx-auto w-[3rem] text-[3rem]  animate-spin" />
         ) : (

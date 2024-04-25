@@ -2,12 +2,12 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="basis-[50%] pt-8 max-w-[550px]">
+    <div className="basis-[50%] pt-2 max-w-[550px]">
       <h2 className=" text-center registernabout">
         ABOUT THE <br />
         PROGRAM
       </h2>
-      <p className="py-4 my-4">
+      <p className="py-4 my-4 text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit
         amet dolor quam. Integer auctor lectus sit amet turpis ullamcorper, id
         lacinia metus ullamcorper. Nullam hendrerit sapien nec magna
