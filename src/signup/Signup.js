@@ -109,8 +109,8 @@ const Signup = ({ setSuccess }) => {
     fetchData()
   }
   return (
-    <section id="register" className="basis-[45%]">
-      <div className="mx-auto my-auto  px-2 py-2 text-center ">
+    <section id="register" className="basis-[45%] p-2">
+      <div className="mx-auto my-auto  px-2 py-2 text-center border border-blue-950 rounded-lg">
         <div className="p-4">
           <h1 className="registernabout">REGISTER</h1>
         </div>
