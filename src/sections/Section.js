@@ -11,8 +11,8 @@ const Section = () => {
         backgroundSize: 'cover',
       }}
     >
-      <div className="sm:py-10">
-        <div className=" text-white mx-auto text-center  font-bold px-4 sm:pt-10 text-[2.5rem] sm:text-[4rem]">
+      <div className="sm:py-4">
+        <div className=" text-white mx-auto text-center font-bold px-4 sm:pt-6 text-[2.5rem] sm:text-[4rem]">
           21ST CENTURY <br />
           DIGITAL CORPS
           <br /> CONFERENCE
