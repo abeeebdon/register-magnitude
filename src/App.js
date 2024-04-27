@@ -21,7 +21,7 @@ function App() {
     return (
       <main className=" w-full bg-white">
         <Section />
-        <Section5 success={success} />
+        <Section5 success={success} setSuccess={setSuccess} />
         <Section2 />
         <Section3 />
         <Section4 />

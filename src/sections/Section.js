@@ -19,8 +19,8 @@ const Section = () => {
             CONFERENCE 1.0
           </span>
         </div>
-        <p className=" text-[1.2rem] text-center text-white font-semibold">
-          CHARTING OPPORTUNITIES IN THE TECH HORIZON
+        <p className=" text-[1.3rem] text-center text-white font-semibold">
+          THEME: CHARTING OPPORTUNITIES IN THE TECH HORIZON
         </p>
         <div className="bg-[#f071a6] mt-4 w-fit py-2 px-4 mx-auto rounded-lg text-white text-[1.2rem] hover:bg-[#f89ac3]">
           <a href="#register">

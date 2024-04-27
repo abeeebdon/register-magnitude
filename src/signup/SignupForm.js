@@ -166,7 +166,7 @@ const SignupForm = ({
           </option>
         </select>
       </div>
-      <div className="max-w-[550px] mx-auto">
+      <div className="p-2 max-w-[550px] mx-auto">
         <input
           type="text"
           id="location"
