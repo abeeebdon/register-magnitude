@@ -186,7 +186,9 @@ const SignupForm = ({
       )}
       <div className="mx-auto m-4 pb-14 w-[100%] max-w-[550px] relative">
         {isLoading ? (
-          <CgSpinner className=" mx-auto w-[3rem] text-[3rem]  animate-spin" />
+          <div className="bg-blue-950 p-3 rounded-lg text-white font-semibold w-full outline-none sm:w-[200px] text-center sm:absolute right-0">
+            <CgSpinner className="animate-spin text-[1.4rem] w-full mx-auto" />
+          </div>
         ) : (
           <button className="bg-blue-950 p-3 rounded-lg text-white font-semibold w-full outline-none sm:max-w-[200px] sm:absolute right-0">
             Register Here

@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setSuccess(false)
-    }, 2000)
+    }, 3000)
   }, [success])
 
   if (success) {
