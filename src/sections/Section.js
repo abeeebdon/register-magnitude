@@ -15,7 +15,9 @@ const Section = () => {
         <div className=" text-white mx-auto text-center font-bold px-4 sm:pt-6 text-[2.5rem] sm:text-[4rem]">
           21ST CENTURY <br />
           DIGITAL CORPS
-          <br /> CONFERENCE
+          <span className="block text-[2.3rem] sm:text-[3.5rem]">
+            CONFERENCE 1.0
+          </span>
         </div>
         <p className=" text-[1.2rem] text-center text-white font-semibold">
           CHARTING OPPORTUNITIES IN THE TECH HORIZON
