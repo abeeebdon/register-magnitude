@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 const Section = () => {
   return (
     <div
-      className=" h-[350px] sm:h-[70vh] font-arial"
+      className=" h-[350px] sm:h-[60vh] md:h-[70vh] font-arial"
       style={{
         backgroundImage:
           'linear-gradient(to right, rgba(200,100,20,0.8), rgba(20,50,150,0.8)), url("/NYSC.jpg")',
