@@ -115,7 +115,7 @@ const SignupForm = ({
           <div className="px-2">
             <input
               type="checkbox"
-              name="gender"
+              name="skills"
               value="true"
               checked={userDetails.skills === 'true'}
               onChange={(e) =>
@@ -127,7 +127,7 @@ const SignupForm = ({
           <div className="px-2">
             <input
               type="checkbox"
-              name="gender"
+              name="skills"
               value="false"
               checked={userDetails.skills === 'false'}
               onChange={(e) =>

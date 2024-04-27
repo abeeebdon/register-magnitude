@@ -8,9 +8,9 @@ const Section3 = () => {
           Our Distinguished <br /> Speakers
         </h1>
         <p className="w-full sm:w-[80%] my-4 p-4 text-[1.3rem]">
-          The summit will feature a series of keynote addresses, fireside chats,
-          and panel discussions with renowned leaders, industry experts, and
-          thought leaders.
+          Renowned experts and thought leaders will share their insights on the
+          latest trends and advancements in technology, inspiring participants
+          to embrace innovation and change
         </p>
       </div>
       <Guests />

@@ -115,11 +115,7 @@ const Signup = ({ setSuccess }) => {
           <h1 className="registernabout">REGISTER</h1>
         </div>
         <div>
-          <p>
-            Please kindly register below to attend the events and be a part of
-            the first to
-            <p>know about the latest news and features</p>
-          </p>
+          <p>Register to attend the 2CDC Conference</p>
         </div>
         <SignupForm
           userDetails={userDetails}
