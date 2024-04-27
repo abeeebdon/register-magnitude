@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Section1 from './sections/Section1'
 import Section3 from './sections/Section3'
 import Section2 from './sections/Section2'
 import Section4 from './sections/Section4'
@@ -24,7 +23,6 @@ function App() {
         <Section />
         <Section2 />
         <Section5 success={success} />
-        <Section1 />
         <Section3 />
         <Section4 />
         <Logos />

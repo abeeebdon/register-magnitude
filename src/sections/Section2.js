@@ -45,7 +45,7 @@ const Section2 = () => {
         <div className="text-[2.5rem] leading-tight">
           <h2 className="font-bold text-center">Event Countdown</h2>
         </div>
-        <div className="flex justify-around items-center gap-[5%] md:gap-[1rem] p-2 ">
+        <div className="text-center flex mx-auto  justify-around items-center gap-[0.2rem] md:gap-[1rem] p-2 ">
           <div className=" flex-col gap-0">
             <h1 className="countdown-heading">{countdown.days}</h1>
             <p className=" text-[1rem] font-semibold text-center">Days</p>
