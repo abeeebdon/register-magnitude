@@ -184,7 +184,7 @@ const SignupForm = ({
           <p>{errMsg}</p>
         </div>
       )}
-      <div className="mx-auto m-4 pb-14 w-[100%] max-w-[550px] relative">
+      <div className="mx-auto m-4 pb-10 w-[100%] max-w-[550px] relative">
         {isLoading ? (
           <div className="bg-blue-950 p-3 rounded-lg text-white font-semibold w-full outline-none sm:w-[200px] text-center sm:absolute right-0">
             <CgSpinner className="animate-spin text-[1.4rem] w-full mx-auto" />

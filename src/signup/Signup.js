@@ -110,8 +110,8 @@ const Signup = ({ setSuccess }) => {
   }
   return (
     <section id="register" className="basis-[45%] p-2">
-      <div className="mx-auto my-auto  px-2 py-2 text-center border border-blue-950 rounded-lg">
-        <div className="p-4">
+      <div className="mx-auto my-auto  px-2  text-center border border-blue-950 rounded-lg">
+        <div className="p-2">
           <h1 className="registernabout">REGISTER</h1>
         </div>
         <div>
