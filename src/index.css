@@ -24,6 +24,6 @@
     @apply text-purple-900 text-[1.2rem] hover:bg-purple-500;
   }
   .registernabout {
-    @apply text-5xl font-bold text-blue-600;
+    @apply text-5xl font-bold text-blue-950;
   }
 }
