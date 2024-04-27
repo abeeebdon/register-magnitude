@@ -3,7 +3,7 @@ const Section1 = () => {
     <div className="relative basis-[47%]">
       <div className="w-fit border-[1rem] border-white rounded-full bg-blue-950 p-10 mx-auto my-4 h-fit absolute left-[25%] top-[6%]  ">
         <p className=" text-white text-center mx-auto font-bold  py-8 text-[1.5rem]">
-          21ST CDC
+          2CDC
           <br /> CONFERENCE
         </p>
       </div>
