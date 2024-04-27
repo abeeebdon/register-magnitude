@@ -30,12 +30,12 @@ const Guests = () => {
           return (
             <div
               key={index}
-              className="relative my-6 py-10 h-[400px] w-[300px] text-center mx-auto"
+              className="relative my-6 py-10 h-[400px] w-[280px] text-center mx-auto"
             >
               <img src={datum.image} className="image" alt="elon" />
-              <div className="bg-white p-4 w-[85%] absolute text-blue-600 text-[1.4rem] bottom-[-10%] left-0 right-0 mx-auto">
+              <div className="bg-white p-4 w-[85%] absolute text-blue-950 text-[1.4rem]  left-0 right-0 top-[70%] mx-auto">
                 <h2 className="font-bold">{datum.name}</h2>
-                <p className="mt-4 text-[1.2rem]">{datum.position}</p>
+                <p className="mt-4 text-[1.3rem]">{datum.position}</p>
               </div>
             </div>
           )
