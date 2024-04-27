@@ -8,7 +8,7 @@ const Section1 = () => {
         </p>
       </div>
       <div className="w-full sm:mt-10 mx-2 h-full my-auto flex items-center text-white">
-        <div className="bg-blue-950 sm:rounded-lg py-2 sm:pt-[4rem] px-4 mt-10 pb-8 ">
+        <div className="bg-blue-950 sm:rounded-lg py-2 sm:pt-[4rem] sm:px-4 mt-10 pb-8 ">
           <p className="w-full text-[1rem] lg:text-xl sm:py-8 sm:mt-14">
             The "21st Century Digital Corps" conference is not just a
             conference; it's a transformative experience tailored specifically
