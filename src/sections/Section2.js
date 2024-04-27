@@ -40,26 +40,38 @@ const Section2 = () => {
   }, [countdown.days])
 
   return (
-    <section className="font-rubik bg-white text-blue-600 py-4">
-      <div className="sm:flex max-[500px]:flex-col justify-between items-center max-w-[1000px] mx-auto">
+    <section className="font-rubik bg-blue-950 text-white py-4">
+      <div className="sm:flex justify-between items-center max-w-[1100px] mx-auto ">
         <div className="text-[2.5rem] leading-tight">
-          <h2 className="font-bold text-center">Event Countdown</h2>
+          <h2 className="font-semibold text-center">Event Countdown</h2>
         </div>
-        <div className="text-center flex mx-auto  justify-around items-center gap-[0.2rem] md:gap-[1rem] p-2 ">
+        <div className="text-center flex items-center gap-[1rem] md:gap-[2rem] justify-around p-2 ">
           <div className=" flex-col gap-0">
-            <h1 className="countdown-heading">{countdown.days}</h1>
-            <p className=" text-[1rem] font-semibold text-center">Days</p>
+            <h1 className="countdown-heading">
+              {countdown.days < 10 ? `0${countdown.days}` : countdown.days}
+            </h1>
+            <p className="text-[1rem] font-semibold text-center">Days</p>
           </div>
           <div className="flex-col gap-0">
-            <h1 className="countdown-heading">{countdown.hours}</h1>
+            <h1 className="countdown-heading">
+              {countdown.hours < 10 ? `0${countdown.hours}` : countdown.hours}
+            </h1>
             <p className=" text-[1rem] font-semibold text-center">Hours</p>
           </div>
           <div className="flex-col gap-0">
-            <h1 className="countdown-heading">{countdown.minutes}</h1>
+            <h1 className="countdown-heading">
+              {countdown.minutes < 10
+                ? `0${countdown.minutes}`
+                : countdown.minutes}
+            </h1>
             <p className=" text-[1rem] font-semibold text-center">Minutes</p>
           </div>
           <div className="flex-col gap-0">
-            <h1 className="countdown-heading">{countdown.seconds}</h1>
+            <h1 className="countdown-heading">
+              {countdown.seconds < 10
+                ? `0${countdown.seconds}`
+                : countdown.seconds}
+            </h1>
             <p className=" text-[1rem] font-semibold text-center">Seconds</p>
           </div>
         </div>

@@ -21,8 +21,8 @@ function App() {
     return (
       <main className=" w-full bg-white">
         <Section />
-        <Section2 />
         <Section5 success={success} />
+        <Section2 />
         <Section3 />
         <Section4 />
         <Logos />

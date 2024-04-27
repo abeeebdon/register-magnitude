@@ -12,7 +12,7 @@
     @apply w-[100%] h-[100%];
   }
   .countdown-heading {
-    @apply w-[100%] h-[100%] font-semibold text-[2.7rem] sm:text-[3rem];
+    @apply w-[100%] h-[100%] text-[2.7rem] sm:text-[4rem];
   }
   .logo {
     @apply w-full h-[150px] max-w-[150px] m-2 mx-6;
