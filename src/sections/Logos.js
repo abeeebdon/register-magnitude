@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import image1 from '../images/IMG-20240411-WA0013.jpg'
 import image2 from '../images/CIT.jpg'
 import image3 from '../images/IMG-20240411-WA0014.jpg'
+import image4 from '../images/experts.jpeg'
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props
@@ -81,13 +82,13 @@ const Logos = () => {
           <img src={image1} alt="img1" className="image-logo" />
         </div>
         <div className="logo">
-          <img src={image1} alt="img1" className="image-logo" />
+          <img src={image4} alt="star" className="image-logo" />
         </div>
         <div className="logo">
           <img src={image1} alt="img1" className="image-logo" />
         </div>
         <div className="logo">
-          <img src={image1} alt="img1" className="image-logo" />
+          <img src={image4} alt="img1" className="image-logo" />
         </div>
       </Slider>
     </section>
