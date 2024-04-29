@@ -8,18 +8,24 @@ import Success from './Success'
 import Section5 from './sections/Section5'
 
 function App() {
-  const [success, setSuccess] = useState(true)
+  const [success, setSuccess] = useState(false)
 
   return (
-    <main className=" w-full bg-white relative">
+    <>
+      <main
+        className={
+          success ? 'opacity-15 relative w-full' : 'w-full bg-white relative'
+        }
+      >
+        <Section />
+        <Section5 success={success} setSuccess={setSuccess} />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        <Logos />
+      </main>
       {success && <Success setSuccess={setSuccess} />}
-      <Section />
-      <Section5 success={success} setSuccess={setSuccess} />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Logos />
-    </main>
+    </>
   )
 }
 

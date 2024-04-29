@@ -2,7 +2,7 @@ import { FaArrowLeft, FaCheck } from 'react-icons/fa'
 const Success = ({ setSuccess }) => {
   return (
     <div
-      className="w-full max-w-[600px]  m-auto px-2 py-4 mt-8 absolute left-[0%] right-[0%] bg-[rgba(255,255,255,1)] z-20 rounded-lg opacity-100"
+      className="w-full max-w-[600px]  m-auto px-2 py-4 mt-8 fixed left-[0%] right-[0%] bg-[rgba(255,255,255,1)] z-20 rounded-lg opacity-100"
       style={{ animation: 'moveComponent 1s forwards' }}
     >
       <div className="my-6 py-4 rounded-[1rem] ">
