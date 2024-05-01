@@ -10,6 +10,9 @@ import Section5 from './sections/Section5'
 function App() {
   const [success, setSuccess] = useState(false)
 
+  function handleBack() {
+    setSuccess(false)
+  }
   return (
     <>
       <main
@@ -24,7 +27,7 @@ function App() {
         <Section4 />
         <Logos />
       </main>
-      {success && <Success setSuccess={setSuccess} />}
+      {success && <Success handleBack={handleBack} />}
     </>
   )
 }

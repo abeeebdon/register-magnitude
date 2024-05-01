@@ -8,7 +8,7 @@ const Signup = ({ setSuccess }) => {
     firstname: '',
     lastname: '',
     phoneNumber: '',
-    password: '',
+    email: '',
     location: '',
     gender: '',
     skills: '',
@@ -48,6 +48,18 @@ const Signup = ({ setSuccess }) => {
     setSkillError(false)
     setIsError(false)
   }
+  const reset = () => {
+    setUserDetails({
+      firstname: '',
+      lastname: '',
+      phoneNumber: '',
+      email: '',
+      location: '',
+      gender: '',
+      skills: '',
+    })
+    setOptionValue('')
+  }
   const handleOptionChange = (e) => {
     setOptionValue(e.target.value)
   }
@@ -55,7 +67,7 @@ const Signup = ({ setSuccess }) => {
     if (isNaN(value)) return false
     setUserDetails({ ...userDetails, phoneNumber: value })
   }
-  const fetchData = async () => {
+  const fetchData = async (e) => {
     try {
       setIsError(false)
       const resp = await axios.post(URL, postData)
@@ -64,22 +76,23 @@ const Signup = ({ setSuccess }) => {
       if (resp.status === 201) {
         setIsLoading(false)
         setSuccess(true)
+        reset()
       }
     } catch (err) {
       setIsError(true)
       setIsLoading(false)
       const error = err?.response?.data?.message
+      console.log(error)
+      console.log(err)
       setErrMsg(error)
     }
   }
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const firstnameRegex = /^[a-zA-Z]+$/ // Regular expression to match alphabetic characters only
-    if (!firstnameRegex.test(userDetails.firstname)) {
+    if (userDetails.firstname < 0) {
       setFirstnameError(true) // Set error state if firstname contains non-alphabetic characters
     }
-    const lastnameRegex = /^[a-zA-Z]+$/ // Regular expression to match alphabetic characters only
-    if (!lastnameRegex.test(userDetails.lastname)) {
+    if (userDetails.lastname < 0) {
       setLastnameError(true) // Set error state if firstname contains non-alphabetic characters
     }
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
@@ -106,7 +119,7 @@ const Signup = ({ setSuccess }) => {
     }
     setIsLoading(true)
 
-    fetchData()
+    fetchData(e)
   }
   return (
     <section id="register" className="basis-[45%] p-2">

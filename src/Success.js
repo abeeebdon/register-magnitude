@@ -1,5 +1,5 @@
 import { FaArrowLeft, FaCheck } from 'react-icons/fa'
-const Success = ({ setSuccess }) => {
+const Success = ({ handleBack }) => {
   return (
     <div
       className="w-full max-w-[600px]  m-auto px-2 py-4 mt-8 fixed left-[0%] right-[0%] bg-[rgba(255,255,255,1)] z-20 rounded-lg opacity-100"
@@ -18,7 +18,7 @@ const Success = ({ setSuccess }) => {
             See you there!
           </p>
           <div className="bg-violet-800 mt-4 w-fit py-2 px-4 mx-auto rounded-lg text-white text-[1.2rem] hover:bg-violet-950">
-            <button onClick={() => setSuccess(false)}>
+            <button onClick={() => handleBack()}>
               Go back
               <FaArrowLeft className="inline  text-white ml-4" />
             </button>
