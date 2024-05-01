@@ -82,9 +82,12 @@ const Signup = ({ setSuccess }) => {
       setIsError(true)
       setIsLoading(false)
       const error = err?.response?.data?.message
-      console.log(error)
-      console.log(err)
-      setErrMsg(error)
+      const errMM = err?.message
+      if (error) {
+        setErrMsg(error)
+      } else {
+        setErrMsg(errMM)
+      }
     }
   }
   const handleSubmit = async (e) => {
