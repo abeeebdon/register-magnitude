@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 const Section2 = () => {
-  const EventDay = '2024-05-25' // set the date of the event
+  const EventDay = '2025-01-25' // set the date of the event
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
