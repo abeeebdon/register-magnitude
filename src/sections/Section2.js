@@ -1,43 +1,36 @@
 import { useState, useEffect } from 'react'
 const Section2 = () => {
-  const EventDay = '2025-01-25' // set the date of the event
+  const EventDay = '2025-02-22' // Set the date of the event
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
   })
+
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date().getTime()
-      const d = new Date(EventDay)
-      const eventDay = d.getTime()
-      const presentDay = eventDay - now
-      const timeleft = new Date(presentDay)
-      if (timeleft > 0) {
-        const day = timeleft.getDate()
-        const hour = timeleft.getHours()
-        const minute = timeleft.getMinutes()
-        const second = timeleft.getSeconds()
-        setCountdown({
-          days: day,
-          hours: hour,
-          minutes: minute,
-          seconds: second,
-        })
+      const eventDay = new Date(EventDay).getTime()
+      const timeLeft = eventDay - now
+
+      if (timeLeft > 0) {
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24))
+        const hours = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        )
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000)
+
+        setCountdown({ days, hours, minutes, seconds })
       } else {
         clearInterval(interval)
-        setCountdown({
-          days: 0,
-          hours: 0,
-          minutes: 0,
-          seconds: 0,
-        })
+        setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 })
       }
     }, 1000)
 
     return () => clearInterval(interval)
-  }, [countdown.days])
+  }, []) // No need for dependencies
 
   return (
     <section className="font-rubik bg-blue-950 text-white py-4">
