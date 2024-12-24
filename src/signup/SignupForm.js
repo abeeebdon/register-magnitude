@@ -158,6 +158,15 @@ const SignupForm = ({
           <option className="option-input" value="Google">
             Google
           </option>
+          <option className="option-input" value="Facebook">
+            Facebook
+          </option>
+          <option className="option-input" value="Linkedin">
+            Linkedin
+          </option>
+          <option className="option-input" value="Instagram">
+            Instagram
+          </option>
           <option className="option-input" value="Friends">
             Friends
           </option>

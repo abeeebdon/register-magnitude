@@ -33,7 +33,7 @@ const Section2 = () => {
   }, []) // No need for dependencies
 
   return (
-    <section className="font-rubik bg-blue-950 text-white py-4">
+    <section className="font-rubik bg-blue-950 text-white py-4 my-5 ">
       <div className="sm:flex justify-between items-center max-w-[1200px] px-2 mx-auto ">
         <div className="text-[2.5rem] leading-tight">
           <h2 className="font-semibold text-center">Event Countdown</h2>

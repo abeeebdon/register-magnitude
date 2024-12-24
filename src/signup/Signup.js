@@ -25,7 +25,7 @@ const Signup = ({ setSuccess }) => {
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
 
-  const URL = 'https://entacrest.onrender.com/reg/register/'
+  const URL = 'https://twocdc-conference.onrender.com/reg/register/'
   const postData = {
     first_name: userDetails.firstname,
     last_name: userDetails.lastname,

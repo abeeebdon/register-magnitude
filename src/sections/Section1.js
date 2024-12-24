@@ -1,7 +1,7 @@
 const Section1 = () => {
   return (
     <div className="relative basis-[47%] bg-blue-100 sm:bg-transparent pt-4">
-      <div className="w-fit border-[1rem] border-white rounded-full bg-blue-950 p-10 mx-auto sm:my-4 h-fit sm:absolute sm:left-[25%]  sm:top-[-20%] md:top-[6%]  ">
+      <div className="w-fit border-[1rem] border-white rounded-full bg-blue-950 p-10 mx-auto sm:my-4 h-fit sm:absolute sm:left-[25%]  sm:top-[-10%] md:top-[6%]  ">
         <p className=" text-white text-center mx-auto font-bold  py-8 text-[1.5rem] mt-4">
           2CDC
           <br /> CONFERENCE
