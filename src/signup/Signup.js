@@ -17,7 +17,6 @@ const validationSchema = yup.object().shape({
     .string()
     .email('Invalid email format')
     .required('Email is required'),
-  location: yup.string().required('Location is required'),
   skills: yup.string().required('Skills are required'),
 })
 
@@ -27,7 +26,7 @@ const Signup = ({ setSuccess }) => {
   const [isError, setIsError] = useState(false)
   const [optionValue, setOptionValue] = useState('')
   const [gender, setGender] = useState(true)
-
+  const [location, setLocation] = useState('Lagos')
   const URL = 'https://twocdc-conference.onrender.com/reg/register/'
 
   // React Hook Form setup
@@ -50,6 +49,7 @@ const Signup = ({ setSuccess }) => {
       const response = await axios.post(URL, {
         ...data,
         gender: gender,
+        location: location,
         heard_by: optionValue,
       })
       if (response.status === 201) {
@@ -202,21 +202,25 @@ const Signup = ({ setSuccess }) => {
               <option className="option-input" value="Instagram">
                 Instagram
               </option>
-
               <option className="option-input" value="Others">
                 Others
               </option>
             </select>
           </div>
-          <div className="p-2 max-w-[550px] mx-auto">
-            <input
-              {...register('location')}
-              className="input"
-              placeholder="Please Enter Your Location"
-            />
-            {errors.location && (
-              <p className="errors">{errors.location.message}</p>
-            )}
+          <div className="m-2 text-left p-2  mx-auto max-w-[550px] justify-start items-center gap-6">
+            <label className="block w-fit">Select your location</label>
+
+            <select
+              className="outline-none w-full p-2"
+              onChange={(e) => setLocation(e.target.value)}
+            >
+              <option className="option-input" value="lagos">
+                Lagos
+              </option>
+              <option className="option-input" value="others">
+                Others
+              </option>
+            </select>
           </div>
           {isError && <p className="errors text-center">{errMsg}</p>}
           <div className="mx-auto m-4 pb-10 w-[100%] max-w-[550px] relative">
