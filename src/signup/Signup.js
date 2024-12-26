@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import axios from 'axios'
+import { CgSpinner } from 'react-icons/cg'
 
 // Validation schema using Yup
 const validationSchema = yup.object().shape({
@@ -235,10 +236,17 @@ const SignupFor = ({
     <div className="mx-auto m-4 pb-10 w-[100%] max-w-[550px] relative">
       <button
         type="submit"
-        className="bg-blue-950 p-3 rounded-lg text-white font-semibold w-full outline-none sm:max-w-[200px] sm:absolute right-0"
+        className="bg-blue-950 p-3 rounded-lg text-white text-center font-semibold w-full outline-none sm:max-w-[200px] sm:absolute right-0"
         disabled={isLoading}
       >
-        {isLoading ? 'Submitting...' : 'Register'}
+        {isLoading ? (
+          <CgSpinner
+            className="animate-spin text-[1.4rem] w-full mx-auto"
+            size={24}
+          />
+        ) : (
+          'Register'
+        )}
       </button>
     </div>
   </form>
