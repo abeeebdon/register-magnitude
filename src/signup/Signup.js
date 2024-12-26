@@ -202,9 +202,7 @@ const Signup = ({ setSuccess }) => {
               <option className="option-input" value="Instagram">
                 Instagram
               </option>
-              <option className="option-input" value="Friends">
-                Friends
-              </option>
+
               <option className="option-input" value="Others">
                 Others
               </option>
