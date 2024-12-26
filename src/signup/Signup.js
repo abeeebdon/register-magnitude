@@ -7,8 +7,8 @@ import { CgSpinner } from 'react-icons/cg'
 
 // Validation schema using Yup
 const validationSchema = yup.object().shape({
-  firstname: yup.string().required('First name is required'),
-  lastname: yup.string().required('Last name is required'),
+  first_name: yup.string().required('First name is required'),
+  last_name: yup.string().required('Last name is required'),
   phone: yup
     .string()
     .matches(/^\d+$/, 'Phone number must be numeric')
@@ -52,6 +52,7 @@ const Signup = ({ setSuccess }) => {
         location: location,
         heard_by: optionValue,
       })
+      console.log(response)
       if (response.status === 201) {
         setIsLoading(false)
         setSuccess(true)
@@ -84,7 +85,7 @@ const Signup = ({ setSuccess }) => {
             <div className="mx-2 my-4 w-full">
               <input
                 placeholder="First Name"
-                {...register('firstname')}
+                {...register('first_name')}
                 className="input"
               />
               {errors.firstname && (
@@ -93,7 +94,7 @@ const Signup = ({ setSuccess }) => {
             </div>
             <div className="mx-2 my-4 w-full">
               <input
-                {...register('lastname')}
+                {...register('last_name')}
                 className="input"
                 placeholder="Last Name"
               />
